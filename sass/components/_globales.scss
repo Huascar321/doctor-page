@@ -1,0 +1,32 @@
+/* Variables */
+$Fuente1: 'DM Sans', sans-serif;
+$color-primario: #023E8A;
+$color-secundario: #0077B6;
+$color-fondo: #FBF7F3;
+
+/* Funciones */
+@function calculateRem($size) {
+  $remSize: $size/ 16px;
+  @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+  line-height: calculateRem($size)*1.5;
+}
+
+@function get-opacity($color, $amount) {
+  @return rgba($color, $amount);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $color-fondo;
+  @include font-size(18px);
+}
