@@ -1,0 +1,36 @@
+.card {
+  width: 88%;
+  height: 168px;
+  background-color: #fff;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20px;
+  box-shadow: -1px 6px 6px -1px rgba(146,146,146,0.59);
+  -webkit-box-shadow: -1px 6px 6px -1px rgba(146,146,146,0.59);
+  -moz-box-shadow: -1px 6px 6px -1px rgba(146,146,146,0.59);
+  &__icon {
+    background-color: $color-secundario;
+    width: 20%;
+    height: 27%;
+    border-radius: 50%;
+    display: flex;
+  }
+}
+
+.skill-info {
+  width: 90%;
+  margin-top: 15px;
+  .skill-info__title {
+    font-weight: bold;
+    @include font-size(18px);
+    letter-spacing: 2.5px;
+    margin: 0;
+  }
+  .skill-info__description {
+    @include font-size(13px);
+    margin-top: 5px;
+    color: #5D6174;
+  }
+}

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Reboot Codes - Based on normalize.css v5.0.0
 **********************/
 html {
@@ -457,12 +458,18 @@ output {
 /* Media Queries Mixin
 **********************/
 /* Variables */
+/* Imágenes */
 /* Funciones */
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+
+main {
+  background-color: #FBF7F3;
 }
 
 body {
@@ -470,6 +477,11 @@ body {
   font-size: 18px;
   font-size: 1.125rem;
   line-height: 1.6875rem;
+}
+
+header {
+  width: 100vw;
+  height: 64px;
 }
 
 nav input[type=checkbox],
@@ -484,8 +496,6 @@ nav .hamburger-lines {
 }
 
 nav {
-  -webkit-box-shadow: 0px 5px 10px 0px #aaa;
-          box-shadow: 0px 5px 10px 0px #aaa;
   position: fixed;
   width: 100%;
   background: #023E8A;
@@ -647,8 +657,6 @@ nav a:hover {
     transition: -webkit-transform 0.5s ease-in-out;
     transition: transform 0.5s ease-in-out;
     transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-    -webkit-box-shadow: 5px 0px 10px 0px #aaa;
-            box-shadow: 5px 0px 10px 0px #aaa;
     overflow: scroll;
   }
   nav .menu-items li {
@@ -691,4 +699,94 @@ nav a:hover {
   .navbar-container input[type=checkbox]:checked ~ .logo {
     display: none;
   }
+}
+.main-cover {
+  width: 100vw;
+  height: 425px;
+  background-color: #0077B6;
+  padding-top: 35px;
+  margin-bottom: 100px;
+}
+.main-cover .title {
+  color: #fff;
+  letter-spacing: 2.5px;
+  text-align: center;
+}
+.main-cover .title .title__doctor {
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
+  margin: 0;
+  padding: 0;
+}
+.main-cover .title hr {
+  border: 0.5px solid #023E8A;
+  width: 65%;
+  margin: 0 auto;
+}
+.main-cover .title .title__occupation {
+  font-size: 15px;
+  font-size: 0.9375rem;
+  line-height: 1.40625rem;
+  font-weight: 400;
+}
+.main-cover .doctor-photo {
+  width: 88%;
+  margin-top: 45px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("../../assets/img/clinica-1.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 357px;
+}
+
+.card {
+  width: 88%;
+  height: 168px;
+  background-color: #fff;
+  margin: 30px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 20px;
+  box-shadow: -1px 6px 6px -1px rgba(146, 146, 146, 0.59);
+  -webkit-box-shadow: -1px 6px 6px -1px rgba(146, 146, 146, 0.59);
+  -moz-box-shadow: -1px 6px 6px -1px rgba(146, 146, 146, 0.59);
+}
+.card__icon {
+  background-color: #0077B6;
+  width: 20%;
+  height: 27%;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.skill-info {
+  width: 90%;
+  margin-top: 15px;
+}
+.skill-info .skill-info__title {
+  font-weight: bold;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
+  letter-spacing: 2.5px;
+  margin: 0;
+}
+.skill-info .skill-info__description {
+  font-size: 13px;
+  font-size: 0.8125rem;
+  line-height: 1.21875rem;
+  margin-top: 5px;
+  color: #5D6174;
 }

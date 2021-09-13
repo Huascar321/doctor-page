@@ -1,0 +1,38 @@
+.main-cover {
+  width: 100vw;
+  height: 425px;
+  background-color: $color-secundario;
+  padding-top: 35px;
+  margin-bottom: 100px;
+  & .title
+  {
+    color: #fff;
+    letter-spacing: 2.5px;
+    text-align: center;
+    & .title__doctor {
+      @include font-size(18px);
+      margin: 0;
+      padding: 0;
+    }
+    & hr {
+      border: 0.5px solid $color-primario;
+      width: 65%;
+      margin: 0 auto;
+    }
+    & .title__occupation {
+      @include font-size(15px);
+      font-weight: 400;
+    }
+  }
+  & .doctor-photo {
+    width: 88%;
+    margin-top: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url($doctor-img);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 357px;
+  }
+}
+

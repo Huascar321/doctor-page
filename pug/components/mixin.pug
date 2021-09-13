@@ -1,0 +1,15 @@
+mixin main-cover(name,occupation)
+  article.main-cover 
+      .title 
+        h1.title__doctor=name
+        hr
+        p.title__occupation=occupation
+      .doctor-photo 
+
+mixin skill-card(title,description,icon)
+  .card
+    .card__icon 
+      img(src="../../assets/icons/"+icon, alt="icon")
+    .skill-info
+      p.skill-info__title=title 
+      p.skill-info__description=description
