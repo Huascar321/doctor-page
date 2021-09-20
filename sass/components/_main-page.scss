@@ -36,3 +36,86 @@
   }
 }
 
+.doctor-cover {
+  width: 95%;
+  height: 340px;
+  position: relative;
+  background-color: #fff;
+  &__rectangle {
+    position: absolute;
+    width: 78%;
+    height: 85%;
+    background-color: $color-secundario;
+  }
+  &__photo {
+    position: absolute;
+    background-image: url('../../assets/img/clinica-4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 94%;
+    height: 93%;
+    top: 7%;
+    left: 6%;
+  }
+}
+
+.about {
+  width: 100vw;
+  margin-top: 40px;
+  background-color: $color-fondo;
+  &__info {
+    width: 88%;
+    margin: 0 auto;
+    &-title {
+      color: $color-primario;
+      letter-spacing: 2px;
+      font-weight: 600;
+      @include font-size(16px);
+    }
+    &-text {
+      margin-top: 25px;
+      @include font-size(16px);
+    }
+  }
+}
+
+.video {
+  background-image: url($video-img);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 88%;
+  margin-top: 35px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  &-opacity {
+    width: 100%;
+    height: 100%;
+    background-color: get-opacity(black, .40);
+    position: relative;
+  }
+  img {
+    -webkit-filter: invert(1);
+    filter: invert(1);
+    width: 30%;
+    height: 30%;
+    position: absolute;
+  }
+}
+
+.testimony {
+  margin-top: 35px;
+  width: 88%;
+  margin-left: auto;
+  margin-right: auto;
+  span {
+    color: $color-primario;
+    letter-spacing: 2px;
+    font-weight: 600;
+    @include font-size(16px);
+  }
+}

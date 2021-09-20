@@ -741,6 +741,102 @@ nav a:hover {
   height: 357px;
 }
 
+.doctor-cover {
+  width: 95%;
+  height: 340px;
+  position: relative;
+  background-color: #fff;
+}
+.doctor-cover__rectangle {
+  position: absolute;
+  width: 78%;
+  height: 85%;
+  background-color: #0077B6;
+}
+.doctor-cover__photo {
+  position: absolute;
+  background-image: url("../../assets/img/clinica-4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 94%;
+  height: 93%;
+  top: 7%;
+  left: 6%;
+}
+
+.about {
+  width: 100vw;
+  margin-top: 40px;
+  background-color: #FBF7F3;
+}
+.about__info {
+  width: 88%;
+  margin: 0 auto;
+}
+.about__info-title {
+  color: #023E8A;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.about__info-text {
+  margin-top: 25px;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.video {
+  background-image: url("../../assets/img/clinica-5.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 88%;
+  margin-top: 35px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 220px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+.video-opacity {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: relative;
+}
+.video img {
+  -webkit-filter: invert(1);
+  filter: invert(1);
+  width: 30%;
+  height: 30%;
+  position: absolute;
+}
+
+.testimony {
+  margin-top: 35px;
+  width: 88%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.testimony span {
+  color: #023E8A;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .card {
   width: 88%;
   height: 168px;
@@ -756,7 +852,6 @@ nav a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-left: 20px;
   box-shadow: -1px 6px 6px -1px rgba(146, 146, 146, 0.59);
   -webkit-box-shadow: -1px 6px 6px -1px rgba(146, 146, 146, 0.59);
   -moz-box-shadow: -1px 6px 6px -1px rgba(146, 146, 146, 0.59);
@@ -769,6 +864,9 @@ nav a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .skill-info {
@@ -789,4 +887,145 @@ nav a:hover {
   line-height: 1.21875rem;
   margin-top: 5px;
   color: #5D6174;
+}
+
+.testimony-card {
+  width: 88%;
+  height: 168px;
+  background-color: #fff;
+  margin: 30px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  box-shadow: -1px 6px 6px -1px rgba(146, 146, 146, 0.59);
+  -webkit-box-shadow: -1px 6px 6px -1px rgba(146, 146, 146, 0.59);
+  -moz-box-shadow: -1px 6px 6px -1px rgba(146, 146, 146, 0.59);
+  padding-top: 25px;
+  color: #5D6174;
+}
+.testimony-card__text {
+  width: 88%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 13px;
+  font-size: 0.8125rem;
+  line-height: 1.21875rem;
+  text-align: center;
+}
+.testimony-card__person {
+  display: -ms-grid;
+  display: grid;
+  width: 88%;
+  -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-columns: 25% 75%;
+  grid-template-columns: 25% 75%;
+  -ms-grid-rows: 50px;
+  grid-template-rows: 50px;
+}
+.testimony-card__person > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+.testimony-card__person > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+}
+.testimony-card__person img {
+  width: 49px;
+  height: 49px;
+  border-radius: 50%;
+  -ms-grid-column: 1;
+  grid-column: 1;
+}
+.testimony-card__person-info {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  width: 50%;
+}
+.testimony-card__person-info span {
+  font-size: 13px;
+  font-size: 0.8125rem;
+  line-height: 1.21875rem;
+  font-weight: 700;
+}
+.testimony-card__person-info p {
+  font-size: 10px;
+  font-size: 0.625rem;
+  line-height: 0.9375rem;
+}
+.testimony-card hr {
+  width: 100%;
+  border: 3px solid #0077B6;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-top: auto;
+}
+
+#fade {
+  display: none;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 1001;
+  -moz-opacity: 0.8;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+
+#light {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 600px;
+  max-height: 360px;
+  margin-left: -300px;
+  margin-top: -180px;
+  border: 2px solid #FFF;
+  background: #FFF;
+  z-index: 1002;
+  overflow: visible;
+}
+
+#boxclose {
+  float: right;
+  cursor: pointer;
+  color: #fff;
+  border: 1px solid #AEAEAE;
+  border-radius: 3px;
+  background: #222222;
+  font-size: 31px;
+  font-weight: bold;
+  display: inline-block;
+  line-height: 0px;
+  padding: 11px 3px;
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  z-index: 1002;
+  opacity: 0.9;
+}
+
+.boxclose:before {
+  content: "x";
+}
+
+#fade:hover ~ #boxclose {
+  display: none;
+}
+
+.test:hover ~ .test2 {
+  display: none;
 }

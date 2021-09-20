@@ -13,3 +13,28 @@ mixin skill-card(title,description,icon)
     .skill-info
       p.skill-info__title=title 
       p.skill-info__description=description
+
+mixin about(title,text)
+  .about
+    .about__info
+      .about__info-title
+        span=title
+      .about__info-text
+        p=text
+
+mixin video()
+  .light 
+    a(class="boxclose" id="boxclose" onclick="lightbox_close();")
+    video(id="doctor-video" width="600" controls)
+      source(src="../../assets/videos/doctor-video.mp4")
+  div(id="fade" onclick="lightbox_close();")
+
+mixin testimony-card(name,occupation,photo,text)
+  .testimony-card
+    p.testimony-card__text=text
+    .testimony-card__person
+      img(src="../../assets/img/testimonios/"+photo, alt="Foto de persona")
+      .testimony-card__person-info
+        span=name
+        p=occupation
+    hr
