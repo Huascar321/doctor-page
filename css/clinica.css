@@ -855,6 +855,7 @@ nav a:hover {
   box-shadow: -1px 6px 6px -1px rgba(146, 146, 146, 0.59);
   -webkit-box-shadow: -1px 6px 6px -1px rgba(146, 146, 146, 0.59);
   -moz-box-shadow: -1px 6px 6px -1px rgba(146, 146, 146, 0.59);
+  padding-left: 20px;
 }
 .card__icon {
   background-color: #0077B6;
@@ -928,8 +929,8 @@ nav a:hover {
       align-self: center;
   -ms-grid-columns: 25% 75%;
   grid-template-columns: 25% 75%;
-  -ms-grid-rows: 50px;
-  grid-template-rows: 50px;
+  -ms-grid-rows: 25px 25px;
+  grid-template-rows: 25px 25px;
 }
 .testimony-card__person > *:nth-child(1) {
   -ms-grid-row: 1;
@@ -937,6 +938,14 @@ nav a:hover {
 }
 .testimony-card__person > *:nth-child(2) {
   -ms-grid-row: 1;
+  -ms-grid-column: 2;
+}
+.testimony-card__person > *:nth-child(3) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+}
+.testimony-card__person > *:nth-child(4) {
+  -ms-grid-row: 2;
   -ms-grid-column: 2;
 }
 .testimony-card__person img {
@@ -955,9 +964,14 @@ nav a:hover {
   font-size: 13px;
   font-size: 0.8125rem;
   line-height: 1.21875rem;
+  -ms-grid-row: 1;
+  grid-row: 1;
   font-weight: 700;
+  white-space: nowrap;
 }
 .testimony-card__person-info p {
+  -ms-grid-row: 2;
+  grid-row: 2;
   font-size: 10px;
   font-size: 0.625rem;
   line-height: 0.9375rem;
@@ -968,6 +982,8 @@ nav a:hover {
   -ms-flex-item-align: end;
       align-self: flex-end;
   margin-top: auto;
+  border-right: 0;
+  border-left: 0;
 }
 
 #fade {

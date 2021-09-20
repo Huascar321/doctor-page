@@ -1,5 +1,6 @@
 .card {
   @include card;
+  padding-left: 20px;
   &__icon {
     background-color: $color-secundario;
     width: 20%;
@@ -41,7 +42,7 @@
     width: 88%;
     align-self: center;
     grid-template-columns: 25% 75%;
-    grid-template-rows: 50px;
+    grid-template-rows: 25px 25px;
     & img {
       width: 49px;
       height: 49px;
@@ -53,9 +54,12 @@
       width: 50%;
       & span {
         @include font-size(13px);
+        grid-row: 1;
         font-weight: 700;
+        white-space: nowrap;
       }
       & p {
+        grid-row: 2;
         @include font-size(10px);
       }
     }
@@ -65,5 +69,7 @@
     border: 3px solid $color-secundario;
     align-self: flex-end;
     margin-top: auto;
+    border-right: 0;
+    border-left: 0;
   }
 }
