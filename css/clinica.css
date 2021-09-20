@@ -1080,3 +1080,91 @@ nav a:hover {
 .test:hover ~ .test2 {
   display: none;
 }
+
+footer {
+  width: 100vw;
+  background-color: #023E8A;
+  height: 250px;
+  padding-top: 15px;
+}
+footer .social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40px;
+}
+footer .social-media__tiktok {
+  margin: 15px;
+  width: 28px;
+  height: 23px;
+  background-image: url("../../assets/icons/social_networks/white/tiktok-icon.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+footer .social-media__instagram {
+  margin: 15px;
+  width: 29px;
+  height: 26px;
+  background-image: url("../../assets/icons/social_networks/white/instagram-icon.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+footer .social-media__facebook {
+  margin: 15px;
+  width: 29px;
+  height: 24px;
+  background-image: url("../../assets/icons/social_networks/white/facebook-icon.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+footer .footer-info {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 25px;
+}
+footer .footer-info__copyright {
+  display: block;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.3125rem;
+}
+footer .footer-info__copyright-bellow {
+  display: block;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.3125rem;
+}
+footer .footer-info__developer-sign {
+  display: block;
+  margin-top: 15px;
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+}
+footer .footer-info__email {
+  display: block;
+  margin-top: 15px;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
+  font-weight: bold;
+}

@@ -38,3 +38,16 @@ mixin testimony-card(name,occupation,photo,text)
         span=name
         p=occupation
     hr
+
+mixin social-media(tiktok_link,instagram_link,facebook_link)
+  .social-media
+    a(href=tiktok_link class="social-media__tiktok")
+    a(href=instagram_link class="social-media__instagram")
+    a(href=facebook_link class="social-media__facebook")
+
+mixin footer-info(copyright,developer_sign,email)
+  .footer-info
+    span.footer-info__copyright=copyright
+    span.footer-info__copyright-bellow All right reserved
+    span.footer-info__developer-sign=developer_sign
+    span.footer-info__email=email
