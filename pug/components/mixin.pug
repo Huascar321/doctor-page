@@ -41,9 +41,9 @@ mixin testimony-card(name,occupation,photo,text)
 
 mixin social-media(tiktok_link,instagram_link,facebook_link)
   .social-media
-    a(href=tiktok_link class="social-media__tiktok")
-    a(href=instagram_link class="social-media__instagram")
-    a(href=facebook_link class="social-media__facebook")
+    a(href=tiktok_link target="_blank" class="social-media__tiktok")
+    a(href=instagram_link target="_blank" class="social-media__instagram")
+    a(href=facebook_link target="_blank" class="social-media__facebook")
 
 mixin footer-info(copyright,developer_sign,email)
   .footer-info

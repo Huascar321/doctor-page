@@ -814,12 +814,15 @@ nav a:hover {
   background-color: rgba(0, 0, 0, 0.4);
   position: relative;
 }
-.video img {
+.video a {
+  width: 23%;
+  height: 30%;
   -webkit-filter: invert(1);
   filter: invert(1);
-  width: 30%;
-  height: 30%;
   position: absolute;
+  background-image: url("../../assets/icons/play.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .testimony {
@@ -1019,66 +1022,6 @@ nav a:hover {
   margin-top: auto;
   border-right: 0;
   border-left: 0;
-}
-
-#fade {
-  display: none;
-  position: fixed;
-  top: 0%;
-  left: 0%;
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  z-index: 1001;
-  -moz-opacity: 0.8;
-  opacity: 0.8;
-  filter: alpha(opacity=80);
-}
-
-#light {
-  display: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  max-width: 600px;
-  max-height: 360px;
-  margin-left: -300px;
-  margin-top: -180px;
-  border: 2px solid #FFF;
-  background: #FFF;
-  z-index: 1002;
-  overflow: visible;
-}
-
-#boxclose {
-  float: right;
-  cursor: pointer;
-  color: #fff;
-  border: 1px solid #AEAEAE;
-  border-radius: 3px;
-  background: #222222;
-  font-size: 31px;
-  font-weight: bold;
-  display: inline-block;
-  line-height: 0px;
-  padding: 11px 3px;
-  position: absolute;
-  right: 2px;
-  top: 2px;
-  z-index: 1002;
-  opacity: 0.9;
-}
-
-.boxclose:before {
-  content: "x";
-}
-
-#fade:hover ~ #boxclose {
-  display: none;
-}
-
-.test:hover ~ .test2 {
-  display: none;
 }
 
 footer {

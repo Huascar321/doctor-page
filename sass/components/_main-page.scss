@@ -98,12 +98,15 @@
     background-color: get-opacity(black, .40);
     position: relative;
   }
-  img {
+  & a {
+    width: 23%;
+    height: 30%;
     -webkit-filter: invert(1);
     filter: invert(1);
-    width: 30%;
-    height: 30%;
     position: absolute;
+    background-image: url('../../assets/icons/play.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 }
 
