@@ -496,8 +496,8 @@ nav .hamburger-lines {
 }
 
 nav {
-  position: fixed;
   width: 100%;
+  position: fixed;
   background: #023E8A;
   color: #000;
   opacity: 0.85;
@@ -508,22 +508,22 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 64px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 64px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 .menu-items {
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
 }
 
 .logo {
@@ -535,15 +535,15 @@ nav {
 }
 
 .menu-items li {
-  list-style: none;
   margin-left: 1.5rem;
   font-size: 1.3rem;
+  list-style: none;
 }
 
 nav a {
-  color: #fff;
   text-decoration: none;
   font-weight: 500;
+  color: #fff;
   -webkit-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
 }
@@ -563,29 +563,29 @@ nav a:hover {
 
   .navbar-container {
     display: block;
-    position: relative;
     height: 64px;
+    position: relative;
   }
 
   .navbar-container input[type=checkbox] {
-    position: absolute;
     display: block;
     height: 32px;
     width: 30px;
     top: 20px;
     right: 20px;
     z-index: 5;
+    position: absolute;
     opacity: 0;
   }
 
   .hamburger {
-    background-color: #0077B6;
-    border-radius: 25px;
     height: 45px;
     width: 45px;
     position: absolute;
     top: 12px;
     right: 15px;
+    border-radius: 25px;
+    background-color: #0077B6;
   }
 
   .navbar-container .hamburger-lines {
@@ -638,12 +638,6 @@ nav a:hover {
   }
 
   nav .menu-items {
-    padding-top: 100px;
-    background: #023E8A;
-    height: 100vh;
-    max-width: 260px;
-    -webkit-transform: translate(-150%);
-            transform: translate(-150%);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -651,8 +645,14 @@ nav a:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    height: 100vh;
+    max-width: 260px;
+    padding-top: 100px;
     margin-left: -40px;
     padding-left: 40px;
+    background: #023E8A;
+    -webkit-transform: translate(-150%);
+            transform: translate(-150%);
     -webkit-transition: -webkit-transform 0.5s ease-in-out;
     transition: -webkit-transform 0.5s ease-in-out;
     transition: transform 0.5s ease-in-out;
@@ -669,10 +669,10 @@ nav a:hover {
     position: absolute;
     top: 10px;
     left: 15px;
+    font-weight: bold;
     font-size: 28px;
     font-size: 1.75rem;
     line-height: 2.625rem;
-    font-weight: bold;
   }
 
   .navbar-container input[type=checkbox]:checked ~ .menu-items {
@@ -703,34 +703,35 @@ nav a:hover {
 .main-cover {
   width: 100vw;
   height: 425px;
-  background-color: #0077B6;
   padding-top: 35px;
   margin-bottom: 100px;
+  background-color: #0077B6;
 }
 .main-cover .title {
-  color: #fff;
-  letter-spacing: 2.5px;
   text-align: center;
+  letter-spacing: 2.5px;
+  color: #fff;
 }
 .main-cover .title .title__doctor {
+  margin: 0;
+  padding: 0;
   font-size: 18px;
   font-size: 1.125rem;
   line-height: 1.6875rem;
-  margin: 0;
-  padding: 0;
 }
 .main-cover .title hr {
-  border: 0.5px solid #023E8A;
   width: 65%;
   margin: 0 auto;
+  border: 0.5px solid #023E8A;
 }
 .main-cover .title .title__occupation {
+  font-weight: 400;
   font-size: 15px;
   font-size: 0.9375rem;
   line-height: 1.40625rem;
-  font-weight: 400;
 }
 .main-cover .doctor-photo {
+  height: 357px;
   width: 88%;
   margin-top: 45px;
   margin-left: auto;
@@ -738,7 +739,6 @@ nav a:hover {
   background-image: url("../../assets/img/clinica-1.jpg");
   background-size: contain;
   background-repeat: no-repeat;
-  height: 357px;
 }
 
 .doctor-cover {
@@ -748,20 +748,20 @@ nav a:hover {
   background-color: #fff;
 }
 .doctor-cover__rectangle {
-  position: absolute;
   width: 78%;
   height: 85%;
+  position: absolute;
   background-color: #0077B6;
 }
 .doctor-cover__photo {
+  width: 94%;
+  height: 93%;
   position: absolute;
+  top: 7%;
+  left: 6%;
   background-image: url("../../assets/img/clinica-4.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  width: 94%;
-  height: 93%;
-  top: 7%;
-  left: 6%;
 }
 
 .about {
@@ -789,17 +789,14 @@ nav a:hover {
 }
 
 .video {
-  background-image: url("../../assets/img/clinica-5.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 88%;
-  margin-top: 35px;
-  margin-left: auto;
-  margin-right: auto;
-  height: 220px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 88%;
+  height: 220px;
+  margin-top: 35px;
+  margin-left: auto;
+  margin-right: auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -807,43 +804,43 @@ nav a:hover {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  background-image: url("../../assets/img/clinica-5.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .video-opacity {
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
   position: relative;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 .video a {
   width: 23%;
   height: 30%;
-  -webkit-filter: invert(1);
-  filter: invert(1);
   position: absolute;
   background-image: url("../../assets/icons/play.svg");
+  -webkit-filter: invert(1);
+  filter: invert(1);
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .testimony {
-  margin-top: 35px;
   width: 88%;
+  margin-top: 35px;
   margin-left: auto;
   margin-right: auto;
 }
 .testimony span {
-  color: #023E8A;
   letter-spacing: 2px;
   font-weight: 600;
+  color: #023E8A;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5rem;
 }
 
 .ubication {
-  height: 268px;
-  background-color: #0077B6;
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -851,22 +848,25 @@ nav a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: 268px;
+  position: relative;
+  background-color: #0077B6;
 }
 .ubication span {
-  color: #fff;
-  font-size: 20px;
-  font-size: 1.25rem;
-  line-height: 1.875rem;
+  margin: 8px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
   letter-spacing: 2px;
-  margin: 8px;
+  color: #fff;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
 }
 .ubication__maps {
-  overflow: hidden;
-  padding-bottom: 56.25%;
   height: 0;
+  padding-bottom: 56.25%;
+  overflow: hidden;
 }
 .ubication__maps iframe {
   left: 0;
@@ -876,10 +876,7 @@ nav a:hover {
 }
 
 .card {
-  width: 88%;
-  height: 168px;
-  background-color: #fff;
-  margin: 30px auto;
+  padding-left: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -890,22 +887,25 @@ nav a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 88%;
+  height: 168px;
+  margin: 30px auto;
+  background-color: #fff;
   box-shadow: -1px 6px 6px -1px rgba(146, 146, 146, 0.59);
   -webkit-box-shadow: -1px 6px 6px -1px rgba(146, 146, 146, 0.59);
   -moz-box-shadow: -1px 6px 6px -1px rgba(146, 146, 146, 0.59);
-  padding-left: 20px;
 }
 .card__icon {
-  background-color: #0077B6;
-  width: 20%;
-  height: 27%;
-  border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 20%;
+  height: 27%;
+  border-radius: 50%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-color: #0077B6;
 }
 
 .skill-info {
@@ -913,26 +913,24 @@ nav a:hover {
   margin-top: 15px;
 }
 .skill-info .skill-info__title {
+  margin: 0;
   font-weight: bold;
+  letter-spacing: 2.5px;
   font-size: 18px;
   font-size: 1.125rem;
   line-height: 1.6875rem;
-  letter-spacing: 2.5px;
-  margin: 0;
 }
 .skill-info .skill-info__description {
+  margin-top: 5px;
+  color: #5d6174;
   font-size: 13px;
   font-size: 0.8125rem;
   line-height: 1.21875rem;
-  margin-top: 5px;
-  color: #5D6174;
 }
 
 .testimony-card {
-  width: 88%;
-  height: 168px;
-  background-color: #fff;
-  margin: 30px auto;
+  padding-top: 25px;
+  color: #5d6174;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -943,32 +941,34 @@ nav a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 88%;
+  height: 168px;
+  margin: 30px auto;
+  background-color: #fff;
   box-shadow: -1px 6px 6px -1px rgba(146, 146, 146, 0.59);
   -webkit-box-shadow: -1px 6px 6px -1px rgba(146, 146, 146, 0.59);
   -moz-box-shadow: -1px 6px 6px -1px rgba(146, 146, 146, 0.59);
-  padding-top: 25px;
-  color: #5D6174;
 }
 .testimony-card__text {
   width: 88%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  text-align: center;
   font-size: 13px;
   font-size: 0.8125rem;
   line-height: 1.21875rem;
-  text-align: center;
 }
 .testimony-card__person {
   display: -ms-grid;
   display: grid;
-  width: 88%;
-  -ms-grid-row-align: center;
-      align-self: center;
   -ms-grid-columns: 25% 75%;
   grid-template-columns: 25% 75%;
   -ms-grid-rows: 25px 25px;
   grid-template-rows: 25px 25px;
+  width: 88%;
+  -ms-grid-row-align: center;
+      align-self: center;
 }
 .testimony-card__person > *:nth-child(1) {
   -ms-grid-row: 1;
@@ -987,11 +987,11 @@ nav a:hover {
   -ms-grid-column: 2;
 }
 .testimony-card__person img {
+  -ms-grid-column: 1;
+  grid-column: 1;
   width: 49px;
   height: 49px;
   border-radius: 50%;
-  -ms-grid-column: 1;
-  grid-column: 1;
 }
 .testimony-card__person-info {
   -ms-grid-column: 2;
@@ -999,13 +999,13 @@ nav a:hover {
   width: 50%;
 }
 .testimony-card__person-info span {
-  font-size: 13px;
-  font-size: 0.8125rem;
-  line-height: 1.21875rem;
   -ms-grid-row: 1;
   grid-row: 1;
   font-weight: 700;
   white-space: nowrap;
+  font-size: 13px;
+  font-size: 0.8125rem;
+  line-height: 1.21875rem;
 }
 .testimony-card__person-info p {
   -ms-grid-row: 2;
@@ -1016,19 +1016,19 @@ nav a:hover {
 }
 .testimony-card hr {
   width: 100%;
-  border: 3px solid #0077B6;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
   margin-top: auto;
   border-right: 0;
   border-left: 0;
+  border: 3px solid #0077B6;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 footer {
   width: 100vw;
-  background-color: #023E8A;
   height: 250px;
   padding-top: 15px;
+  background-color: #023E8A;
 }
 footer .social-media {
   display: -webkit-box;
@@ -1047,34 +1047,34 @@ footer .social-media {
   height: 40px;
 }
 footer .social-media__tiktok {
-  margin: 15px;
   width: 28px;
   height: 23px;
+  margin: 15px;
   background-image: url("../../assets/icons/social_networks/white/tiktok-icon.svg");
   background-size: contain;
   background-repeat: no-repeat;
 }
 footer .social-media__instagram {
-  margin: 15px;
   width: 29px;
   height: 26px;
+  margin: 15px;
   background-image: url("../../assets/icons/social_networks/white/instagram-icon.svg");
   background-size: contain;
   background-repeat: no-repeat;
 }
 footer .social-media__facebook {
-  margin: 15px;
   width: 29px;
   height: 24px;
+  margin: 15px;
   background-image: url("../../assets/icons/social_networks/white/facebook-icon.svg");
   background-size: contain;
   background-repeat: no-repeat;
 }
 footer .footer-info {
-  color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 25px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1082,7 +1082,7 @@ footer .footer-info {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 25px;
+  color: #fff;
 }
 footer .footer-info__copyright {
   display: block;
@@ -1106,8 +1106,8 @@ footer .footer-info__developer-sign {
 footer .footer-info__email {
   display: block;
   margin-top: 15px;
+  font-weight: bold;
   font-size: 18px;
   font-size: 1.125rem;
   line-height: 1.6875rem;
-  font-weight: bold;
 }

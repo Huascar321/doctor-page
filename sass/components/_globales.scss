@@ -21,13 +21,13 @@ $video-img : '../../assets/img/clinica-5.jpg';
 }
 
 @mixin card {
-  width: 88%;
-  height: 168px;
-  background-color: #fff;
-  margin: 30px auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 88%;
+  height: 168px;
+  margin: 30px auto;
+  background-color: #fff;
   box-shadow: -1px 6px 6px -1px rgba(146,146,146,0.59);
   -webkit-box-shadow: -1px 6px 6px -1px rgba(146,146,146,0.59);
   -moz-box-shadow: -1px 6px 6px -1px rgba(146,146,146,0.59);

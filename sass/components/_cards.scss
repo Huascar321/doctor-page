@@ -1,13 +1,13 @@
 .card {
-  @include card;
   padding-left: 20px;
+  @include card;
   &__icon {
-    background-color: $color-secundario;
+    display: flex;
     width: 20%;
     height: 27%;
     border-radius: 50%;
-    display: flex;
     justify-content: center;
+    background-color: $color-secundario;
   }
 }
 
@@ -15,48 +15,48 @@
   width: 90%;
   margin-top: 15px;
   .skill-info__title {
-    font-weight: bold;
-    @include font-size(18px);
-    letter-spacing: 2.5px;
     margin: 0;
+    font-weight: bold;
+    letter-spacing: 2.5px;
+    @include font-size(18px);
   }
   .skill-info__description {
-    @include font-size(13px);
     margin-top: 5px;
-    color: #5D6174;
+    color: #5d6174;
+    @include font-size(13px);
   }
 }
 
 .testimony-card {
-  @include card;
   padding-top: 25px;
-  color: #5D6174;
+  color: #5d6174;
+  @include card;
   &__text {
     width: 88%;
     align-self: center;
-    @include font-size(13px);
     text-align: center;
+    @include font-size(13px);
   }
   &__person {
     display: grid;
-    width: 88%;
-    align-self: center;
     grid-template-columns: 25% 75%;
     grid-template-rows: 25px 25px;
+    width: 88%;
+    align-self: center;
     & img {
+      grid-column: 1;
       width: 49px;
       height: 49px;
       border-radius: 50%;
-      grid-column: 1;
     }
     &-info {
       grid-column: 2;
       width: 50%;
       & span {
-        @include font-size(13px);
         grid-row: 1;
         font-weight: 700;
         white-space: nowrap;
+        @include font-size(13px);
       }
       & p {
         grid-row: 2;
@@ -66,10 +66,10 @@
   }
   & hr {
     width: 100%;
-    border: 3px solid $color-secundario;
-    align-self: flex-end;
     margin-top: auto;
     border-right: 0;
     border-left: 0;
+    border: 3px solid $color-secundario;
+    align-self: flex-end;
   }
 }

@@ -1,30 +1,30 @@
 .main-cover {
   width: 100vw;
   height: 425px;
-  background-color: $color-secundario;
   padding-top: 35px;
   margin-bottom: 100px;
-  & .title
-  {
-    color: #fff;
-    letter-spacing: 2.5px;
+  background-color: $color-secundario;
+  & .title {
     text-align: center;
+    letter-spacing: 2.5px;
+    color: #fff;
     & .title__doctor {
-      @include font-size(18px);
       margin: 0;
       padding: 0;
+      @include font-size(18px);
     }
     & hr {
-      border: 0.5px solid $color-primario;
       width: 65%;
       margin: 0 auto;
+      border: 0.5px solid $color-primario;
     }
     & .title__occupation {
-      @include font-size(15px);
       font-weight: 400;
+      @include font-size(15px);
     }
   }
   & .doctor-photo {
+    height: 357px;
     width: 88%;
     margin-top: 45px;
     margin-left: auto;
@@ -32,7 +32,6 @@
     background-image: url($doctor-img);
     background-size: contain;
     background-repeat: no-repeat;
-    height: 357px;
   }
 }
 
@@ -42,20 +41,20 @@
   position: relative;
   background-color: #fff;
   &__rectangle {
-    position: absolute;
     width: 78%;
     height: 85%;
+    position: absolute;
     background-color: $color-secundario;
   }
   &__photo {
-    position: absolute;
-    background-image: url('../../assets/img/clinica-4.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
     width: 94%;
     height: 93%;
+    position: absolute;
     top: 7%;
     left: 6%;
+    background-image: url("../../assets/img/clinica-4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 
@@ -80,66 +79,66 @@
 }
 
 .video {
-  background-image: url($video-img);
-  background-size: cover;
-  background-repeat: no-repeat;
+  display: flex;
   width: 88%;
+  height: 220px;
   margin-top: 35px;
   margin-left: auto;
   margin-right: auto;
-  height: 220px;
-  display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
+  background-image: url($video-img);
+  background-size: cover;
+  background-repeat: no-repeat;
   &-opacity {
     width: 100%;
     height: 100%;
-    background-color: get-opacity(black, .40);
     position: relative;
+    background-color: get-opacity(black, 0.4);
   }
   & a {
     width: 23%;
     height: 30%;
+    position: absolute;
+    background-image: url("../../assets/icons/play.svg");
     -webkit-filter: invert(1);
     filter: invert(1);
-    position: absolute;
-    background-image: url('../../assets/icons/play.svg');
     background-size: contain;
     background-repeat: no-repeat;
   }
 }
 
 .testimony {
-  margin-top: 35px;
   width: 88%;
+  margin-top: 35px;
   margin-left: auto;
   margin-right: auto;
   span {
-    color: $color-primario;
     letter-spacing: 2px;
     font-weight: 600;
+    color: $color-primario;
     @include font-size(16px);
   }
 }
 
 .ubication {
-  height: 268px;
-  background-color: $color-secundario;
-  position: relative;
   display: flex;
   flex-direction: column;
+  height: 268px;
+  position: relative;
+  background-color: $color-secundario;
   & span {
-    color: #fff;
-    @include font-size(20px);
+    margin: 8px;
     align-self: center;
     letter-spacing: 2px;
-    margin: 8px;
+    color: #fff;
+    @include font-size(20px);
   }
   &__maps {
-    overflow: hidden;
-    padding-bottom: 56.25%;
     height: 0;
+    padding-bottom: 56.25%;
+    overflow: hidden;
     & iframe {
       left: 0;
       top: 0;
