@@ -14,13 +14,17 @@ block contenidos
       span.services__title--two Experimentada en multiples prácticas
       .carousel
         .carousel-cell
-          +carousel('Limpieza general','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique libero viverra ultricies commodo.','tooth-clean.svg')
+          +carousel('Limpieza general','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique libero viverra ultricies commodo.','tooth-clean.svg','modal1')
         .carousel-cell
-          +carousel('Eliminación de caries','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique libero viverra ultricies commodo.','tooth-cavities.svg')
+          +carousel('Eliminación de caries','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique libero viverra ultricies commodo.','tooth-cavities.svg','modal2')
         .carousel-cell
-          +carousel('Blanqueamiento','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique libero viverra ultricies commodo.','tooth-white.svg')
+          +carousel('Blanqueamiento','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique libero viverra ultricies commodo.','tooth-white.svg','modal3')
         .carousel-cell
-          +carousel('Armonización Facial','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique libero viverra ultricies commodo.','facial-harmonization.svg')
+          +carousel('Armonización Facial','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique libero viverra ultricies commodo.','facial-harmonization.svg','modal4')
+      +modal('Limpieza general','modal1')
+      +modal('Limpieza general','modal2')
+      +modal('Limpieza general','modal3')
+      +modal('Limpieza general','modal4')
     .testimony
       span TESTIMONIOS
     +testimony-card('Yesenia Peredo', 'Presentadora de TV', 'testimony1.jpg', '“La Dra. Paola Terrazas dejo mis dientes perfectos y ahora mi sonrisa mejoró gracias a Dental Center!”')
