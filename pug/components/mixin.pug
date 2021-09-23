@@ -51,3 +51,12 @@ mixin footer-info(copyright,developer_sign,email)
     span.footer-info__copyright-bellow All right reserved
     span.footer-info__developer-sign=developer_sign
     span.footer-info__email=email
+
+mixin carousel(title,description,icon)
+  .services__carrousel 
+        .services__carrousel-icon
+          img(src="../../assets/icons/carrousel/"+icon, alt="Icono")
+        .services__carrousel-info
+          span.services__carrousel-info__title=title
+          span.services__carrousel-info__description=description
+          a MÁS INFORMACIÓN

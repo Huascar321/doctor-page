@@ -5,18 +5,30 @@ block contenidos
     +skill-card('EXPERTA','En estética y tratamientos dentales.','like-icon.svg')
     +skill-card('ESPECIALISTA','Diseñar sonrisas.','heart-icon.svg')
     +skill-card('PREPARADA','En brindar el mejor servicio.','star-icon.svg')
+    +about('SOBRE MÍ','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin nibh cursus at sed sagittis amet, sed. Tristique id nibh lobortis nunc elementum. Tellus quam mauris aenean turpis vulputate sodales nullam lobortis. Vulputate tortor tincidun. Cras facilisis nulla ut tortor porttitor placerat. Nam lacinia, mi non lacinia suscipit, urna est iaculis arcu, id cursus quam risus sit amet diam. Vivamus feugiat, est congue eleifend tempus, lectus ligula sollicitudin elit, et lobortis quam lorem sit amet nisl. Maecenas vel enim scelerisque, rutrum nunc ac, euismod neque.')
     .doctor-cover 
       .doctor-cover__rectangle 
       .doctor-cover__photo 
-    +about('Sobre mí','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin nibh cursus at sed sagittis amet, sed. Tristique id nibh lobortis nunc elementum. Tellus quam mauris aenean turpis vulputate sodales nullam lobortis. Vulputate tortor tincidun.')
-    .video
-      .video-opacity
-      a(href="https://fb.watch/8ahMRwkmYn/" target="_blank")
+    .services
+      span.services__title--one SERVICIOS  
+      span.services__title--two Experimentada en multiples prácticas
+      .carousel
+        .carousel-cell
+          +carousel('Limpieza general','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique libero viverra ultricies commodo.','tooth-clean.svg')
+        .carousel-cell
+          +carousel('Eliminación de caries','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique libero viverra ultricies commodo.','tooth-cavities.svg')
+        .carousel-cell
+          +carousel('Blanqueamiento','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique libero viverra ultricies commodo.','tooth-white.svg')
+        .carousel-cell
+          +carousel('Armonización Facial','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique libero viverra ultricies commodo.','facial-harmonization.svg')
     .testimony
-      span Testimonios
+      span TESTIMONIOS
     +testimony-card('Yesenia Peredo', 'Presentadora de TV', 'testimony1.jpg', '“La Dra. Paola Terrazas dejo mis dientes perfectos y ahora mi sonrisa mejoró gracias a Dental Center!”')
     +testimony-card('Testimonio 2', 'Presentadora de TV', 'testimony1.jpg', '“La Dra. Paola Terrazas dejo mis dientes perfectos y ahora mi sonrisa mejoró gracias a Dental Center!”')
     +testimony-card('Testimonio 3', 'Presentadora de TV', 'testimony1.jpg', '“La Dra. Paola Terrazas dejo mis dientes perfectos y ahora mi sonrisa mejoró gracias a Dental Center!”')
+    .video
+      .video-opacity
+      a(href="https://fb.watch/8ahMRwkmYn/" target="_blank")
     .ubication
       span ¡Encuentranos!
       .ubication__maps
