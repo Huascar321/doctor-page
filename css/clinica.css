@@ -739,6 +739,7 @@ nav a:hover {
 .doctor-cover {
   width: 95%;
   height: 340px;
+  margin-top: 45px;
   position: relative;
   background-color: #fff;
 }
@@ -761,9 +762,9 @@ nav a:hover {
 
 .about {
   width: 100vw;
-  margin-top: 40px;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  margin-top: 50px;
+  padding-top: 45px;
+  padding-bottom: 60px;
   background-color: #fff;
 }
 .about__info {
@@ -791,7 +792,7 @@ nav a:hover {
   display: flex;
   width: 88%;
   height: 220px;
-  margin-top: 35px;
+  margin-top: 55px;
   margin-left: auto;
   margin-right: auto;
   -webkit-box-pack: center;
@@ -824,7 +825,6 @@ nav a:hover {
 
 .testimony {
   width: 88%;
-  margin-top: 35px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -882,7 +882,7 @@ nav a:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 88%;
-  margin: 35px auto;
+  margin: 50px auto;
 }
 .services__title--one {
   letter-spacing: 2px;
@@ -893,6 +893,7 @@ nav a:hover {
   line-height: 1.5rem;
 }
 .services__title--two {
+  margin-top: 5px;
   font-weight: bold;
   font-size: 20px;
   font-size: 1.25rem;
@@ -999,7 +1000,7 @@ nav a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 20%;
+  width: 22%;
   height: 25%;
   border-radius: 50%;
   -webkit-box-pack: center;
@@ -1033,7 +1034,7 @@ nav a:hover {
 }
 
 .testimony-card {
-  padding-top: 25px;
+  padding-top: 45px;
   color: #5d6174;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1059,9 +1060,9 @@ nav a:hover {
       -ms-grid-row-align: center;
       align-self: center;
   text-align: center;
-  font-size: 13px;
-  font-size: 0.8125rem;
-  line-height: 1.21875rem;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  line-height: 1.40625rem;
 }
 .testimony-card__person {
   display: -ms-grid;
@@ -1071,6 +1072,7 @@ nav a:hover {
   -ms-grid-rows: 25px 25px;
   grid-template-rows: 25px 25px;
   width: 88%;
+  margin-top: 5px;
   -ms-grid-row-align: center;
       align-self: center;
 }
@@ -1107,9 +1109,9 @@ nav a:hover {
   grid-row: 1;
   font-weight: 700;
   white-space: nowrap;
-  font-size: 13px;
-  font-size: 0.8125rem;
-  line-height: 1.21875rem;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.3125rem;
 }
 .testimony-card__person-info p {
   -ms-grid-row: 2;

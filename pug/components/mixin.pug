@@ -21,6 +21,9 @@ mixin about(title,text)
         span=title
       .about__info-text
         p=text
+    .doctor-cover 
+      .doctor-cover__rectangle 
+      .doctor-cover__photo 
 
 mixin video()
   .light 
@@ -61,7 +64,7 @@ mixin carousel(title,description,icon,id)
           span.services__carrousel-info__description=description
           a(data-bs-toggle="modal" data-bs-target="#"+id) MÁS INFORMACIÓN
   
-mixin modal(title,id)
+mixin modal(title,id,text,link)
   div(class="modal" id=id tabindex="-1" aria-labelledby="label_"+id aria-hidden="true")
     div(class="modal-dialog modal-dialog-centered")
       div(class="modal-content")
@@ -69,6 +72,6 @@ mixin modal(title,id)
           h5(class="modal-title" id="label_"+id)=title
           button(type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close")
         div(class="modal-body")
-          p  ...test
+          p=text
         div(class="modal-footer")
-          button(type="button" class="btn btn-primary") Reservar cita
+          a(href=link target="_blank" class="btn btn-primary") Reservar cita
