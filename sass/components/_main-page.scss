@@ -1,7 +1,10 @@
 .main-cover {
   width: 100vw;
-  height: 425px;
+  /* height: 425px; */
+  height: 133vw;
+  max-height: 800px;
   padding-top: 35px;
+  padding-bottom: 5%;
   margin-bottom: 100px;
   background-color: $color-secundario;
   & .title {
@@ -11,20 +14,31 @@
     & .title__doctor {
       margin: 0;
       padding: 0;
-      @include font-size(18px);
+      @include font-size(20px);
+      @include media('mobile-l') {
+        @include font-size(24px)
+      }
     }
     & hr {
-      width: 65%;
+      /* width: 75%; */
+      width: 210px;
       margin: 0 auto;
       border: 0.5px solid $color-primario;
+      @include media('mobile-l') {
+        width: 242px;
+      }
     }
     & .title__occupation {
       font-weight: 400;
       @include font-size(15px);
+      @include media('mobile-l') {
+        @include font-size(18px)
+      }
     }
   }
   & .doctor-photo {
-    height: 357px;
+    /* height: 357px; */
+    height: 100%;
     width: 88%;
     margin-top: 45px;
     margin-left: auto;

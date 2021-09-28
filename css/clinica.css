@@ -641,10 +641,12 @@ nav a:hover {
         -ms-flex-direction: column;
             flex-direction: column;
     height: 100vh;
-    max-width: 260px;
+    max-width: 80vw;
     padding-top: 100px;
-    margin-left: -40px;
-    padding-left: 40px;
+    /* margin-left: -40px; */
+    margin-left: -15%;
+    /* padding-left: 40px; */
+    padding-left: 15%;
     background: #023E8A;
     -webkit-transform: translate(-150%);
             transform: translate(-150%);
@@ -659,7 +661,14 @@ nav a:hover {
     font-size: 1.1rem;
     font-weight: 500;
   }
-
+}
+@media only screen and (max-width: 768px) and (min-width: 425px) {
+  nav .menu-items li {
+    margin-bottom: 2rem;
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 768px) {
   .logo {
     position: absolute;
     top: 10px;
@@ -669,22 +678,26 @@ nav a:hover {
     font-size: 1.75rem;
     line-height: 2.625rem;
   }
-
+}
+@media (max-width: 768px) {
   .navbar-container input[type=checkbox]:checked ~ .menu-items {
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
-
+}
+@media (max-width: 768px) {
   .navbar-container input[type=checkbox]:checked ~ .hamburger-lines .line1 {
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
   }
-
+}
+@media (max-width: 768px) {
   .navbar-container input[type=checkbox]:checked ~ .hamburger-lines .line2 {
     -webkit-transform: scaleX(0);
             transform: scaleX(0);
   }
-
+}
+@media (max-width: 768px) {
   .navbar-container input[type=checkbox]:checked ~ .hamburger-lines .line3 {
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
@@ -697,8 +710,11 @@ nav a:hover {
 }
 .main-cover {
   width: 100vw;
-  height: 425px;
+  /* height: 425px; */
+  height: 133vw;
+  max-height: 800px;
   padding-top: 35px;
+  padding-bottom: 5%;
   margin-bottom: 100px;
   background-color: #0077B6;
 }
@@ -710,14 +726,27 @@ nav a:hover {
 .main-cover .title .title__doctor {
   margin: 0;
   padding: 0;
-  font-size: 18px;
-  font-size: 1.125rem;
-  line-height: 1.6875rem;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+}
+@media only screen and (min-width: 425px) {
+  .main-cover .title .title__doctor {
+    font-size: 24px;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+  }
 }
 .main-cover .title hr {
-  width: 65%;
+  /* width: 75%; */
+  width: 210px;
   margin: 0 auto;
   border: 0.5px solid #023E8A;
+}
+@media only screen and (min-width: 425px) {
+  .main-cover .title hr {
+    width: 242px;
+  }
 }
 .main-cover .title .title__occupation {
   font-weight: 400;
@@ -725,8 +754,16 @@ nav a:hover {
   font-size: 0.9375rem;
   line-height: 1.40625rem;
 }
+@media only screen and (min-width: 425px) {
+  .main-cover .title .title__occupation {
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 1.6875rem;
+  }
+}
 .main-cover .doctor-photo {
-  height: 357px;
+  /* height: 357px; */
+  height: 100%;
   width: 88%;
   margin-top: 45px;
   margin-left: auto;
