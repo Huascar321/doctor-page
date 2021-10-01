@@ -39,7 +39,9 @@
   & .doctor-photo {
     /* height: 357px; */
     height: 100%;
+    max-height: 739px;
     width: 88%;
+    max-width: 595px;
     margin-top: 45px;
     margin-left: auto;
     margin-right: auto;
@@ -51,10 +53,22 @@
 
 .doctor-cover {
   width: 95%;
-  height: 340px;
+  max-width: 586px;
+  /* height: 340px; */
+  height: 107vw;
+  max-height: 648px;
   margin-top: 45px;
   position: relative;
   background-color: #fff;
+  /* &__lines {
+    width: 88%;
+    height: 80%;
+    position: absolute;
+    top: 155px;
+    background: url('../../assets/img/lines.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  } */
   &__rectangle {
     width: 78%;
     height: 85%;
@@ -90,7 +104,7 @@
     }
     &-text {
       margin-top: 25px;
-      @include font-size(16px);
+      @include font-size(18px);
     }
   }
 }
@@ -98,7 +112,8 @@
 .video {
   display: flex;
   width: 88%;
-  height: 220px;
+  /* height: 220px; */
+  height: 50vw;
   margin-top: 55px;
   margin-left: auto;
   margin-right: auto;
@@ -141,10 +156,12 @@
 .ubication {
   display: flex;
   flex-direction: column;
-  height: 268px;
+  /* height: 268px; */
+  height: 70vw;
   margin-top: 45px;
   position: relative;
-  background-color: $color-secundario;
+  /* background-color: $color-secundario; */
+  background-color: $color-primario;
   & span {
     margin: 8px;
     align-self: center;
@@ -159,7 +176,8 @@
     & iframe {
       left: 0;
       top: 0;
-      height: 185px;
+      /* height: 185px; */
+      height: 58vw;
       width: 100%;
     }
   }
@@ -187,12 +205,13 @@
   display: flex;
   flex-direction: column;
   width: 88vw;
+  /* max-width: 694px; */
   height: 369px;
-  margin: 25px auto;
+  margin: 25px 0;
   padding: 15px;
   justify-content: center;
   align-items: center;
-  border: 0.5px get-opacity($color-primario, 0.2) solid;
+  /* border: 0.1px get-opacity($color-primario, 0.2) solid; */
   background-color: #fff;
   &-icon {
     display: flex;
@@ -227,7 +246,7 @@
       margin-top: 15px;
       text-align: center;
       /* text-decoration: none; */
-      color: $color-secundario;
+      color: blue;
       @include font-size(16px);
     }
   }

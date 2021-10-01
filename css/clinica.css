@@ -764,7 +764,9 @@ nav a:hover {
 .main-cover .doctor-photo {
   /* height: 357px; */
   height: 100%;
+  max-height: 739px;
   width: 88%;
+  max-width: 595px;
   margin-top: 45px;
   margin-left: auto;
   margin-right: auto;
@@ -775,10 +777,22 @@ nav a:hover {
 
 .doctor-cover {
   width: 95%;
-  height: 340px;
+  max-width: 586px;
+  /* height: 340px; */
+  height: 107vw;
+  max-height: 648px;
   margin-top: 45px;
   position: relative;
   background-color: #fff;
+  /* &__lines {
+    width: 88%;
+    height: 80%;
+    position: absolute;
+    top: 155px;
+    background: url('../../assets/img/lines.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  } */
 }
 .doctor-cover__rectangle {
   width: 78%;
@@ -818,9 +832,9 @@ nav a:hover {
 }
 .about__info-text {
   margin-top: 25px;
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
 }
 
 .video {
@@ -828,7 +842,8 @@ nav a:hover {
   display: -ms-flexbox;
   display: flex;
   width: 88%;
-  height: 220px;
+  /* height: 220px; */
+  height: 50vw;
   margin-top: 55px;
   margin-left: auto;
   margin-right: auto;
@@ -882,10 +897,12 @@ nav a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 268px;
+  /* height: 268px; */
+  height: 70vw;
   margin-top: 45px;
   position: relative;
-  background-color: #0077B6;
+  /* background-color: $color-secundario; */
+  background-color: #023E8A;
 }
 .ubication span {
   margin: 8px;
@@ -906,7 +923,8 @@ nav a:hover {
 .ubication__maps iframe {
   left: 0;
   top: 0;
-  height: 185px;
+  /* height: 185px; */
+  height: 58vw;
   width: 100%;
 }
 
@@ -946,8 +964,9 @@ nav a:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 88vw;
+  /* max-width: 694px; */
   height: 369px;
-  margin: 25px auto;
+  margin: 25px 0;
   padding: 15px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -955,7 +974,7 @@ nav a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 0.5px rgba(2, 62, 138, 0.2) solid;
+  /* border: 0.1px get-opacity($color-primario, 0.2) solid; */
   background-color: #fff;
 }
 .services__carrousel-icon {
@@ -1007,14 +1026,15 @@ nav a:hover {
   margin-top: 15px;
   text-align: center;
   /* text-decoration: none; */
-  color: #0077B6;
+  color: blue;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5rem;
 }
 
 .card {
-  padding-left: 20px;
+  padding: 20px;
+  /* padding-left: 20px; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1026,19 +1046,28 @@ nav a:hover {
       -ms-flex-pack: center;
           justify-content: center;
   width: 88%;
-  height: 228px;
+  /* width: 281.59px; */
+  /* height: 228px; */
+  height: auto;
   margin: 30px auto;
   background-color: #fff;
   /* box-shadow: -1px 6px 6px -1px rgba(146,146,146,0.59);
   -webkit-box-shadow: -1px 6px 6px -1px rgba(146,146,146,0.59);
   -moz-box-shadow: -1px 6px 6px -1px rgba(146,146,146,0.59); */
+  /* @include media('mobile-l') {
+    height: 144px;
+    flex-direction: row;
+    align-items: center;
+  } */
 }
 .card__icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 22%;
-  height: 25%;
+  /* width: 22%;
+  height: 25%; */
+  width: 59.09px;
+  height: 56.5px;
   border-radius: 50%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1046,8 +1075,26 @@ nav a:hover {
   background-color: #0077B6;
 }
 .card__icon img {
-  width: 100%;
-  height: 100%;
+  width: 60%;
+  -webkit-filter: invert(1);
+  filter: invert(1);
+}
+@media only screen and (min-width: 425px) {
+  .card__icon {
+    margin-right: 15px;
+  }
+}
+@media only screen and (min-width: 425px) {
+  .card {
+    height: 144px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .skill-info {
@@ -1056,22 +1103,22 @@ nav a:hover {
 }
 .skill-info .skill-info__title {
   margin: 0;
-  font-weight: bold;
+  font-weight: 400;
   letter-spacing: 2.5px;
-  font-size: 20px;
-  font-size: 1.25rem;
-  line-height: 1.875rem;
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
 }
 .skill-info .skill-info__description {
   margin-top: 5px;
   color: #5d6174;
-  font-size: 15px;
-  font-size: 0.9375rem;
-  line-height: 1.40625rem;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
 }
 
 .testimony-card {
-  padding-top: 45px;
+  padding-top: 50px;
   color: #5d6174;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1084,12 +1131,19 @@ nav a:hover {
       -ms-flex-pack: center;
           justify-content: center;
   width: 88%;
-  height: 228px;
+  /* width: 281.59px; */
+  /* height: 228px; */
+  height: auto;
   margin: 30px auto;
   background-color: #fff;
   /* box-shadow: -1px 6px 6px -1px rgba(146,146,146,0.59);
   -webkit-box-shadow: -1px 6px 6px -1px rgba(146,146,146,0.59);
   -moz-box-shadow: -1px 6px 6px -1px rgba(146,146,146,0.59); */
+  /* @include media('mobile-l') {
+    height: 144px;
+    flex-direction: row;
+    align-items: center;
+  } */
 }
 .testimony-card__text {
   width: 88%;
@@ -1097,19 +1151,22 @@ nav a:hover {
       -ms-grid-row-align: center;
       align-self: center;
   text-align: center;
-  font-size: 15px;
-  font-size: 0.9375rem;
-  line-height: 1.40625rem;
+  color: rgba(93, 97, 116, 0.8);
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
 }
 .testimony-card__person {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 25% 75%;
-  grid-template-columns: 25% 75%;
+  /* grid-template-columns: 25% 75%; */
+  -ms-grid-columns: 70px 65%;
+  grid-template-columns: 70px 65%;
   -ms-grid-rows: 25px 25px;
   grid-template-rows: 25px 25px;
   width: 88%;
   margin-top: 5px;
+  margin-bottom: 40px;
   -ms-grid-row-align: center;
       align-self: center;
 }
@@ -1140,22 +1197,22 @@ nav a:hover {
   -ms-grid-column: 2;
   grid-column: 2;
   width: 50%;
+  white-space: nowrap;
 }
 .testimony-card__person-info span {
   -ms-grid-row: 1;
   grid-row: 1;
   font-weight: 700;
-  white-space: nowrap;
-  font-size: 14px;
-  font-size: 0.875rem;
-  line-height: 1.3125rem;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
 }
 .testimony-card__person-info p {
   -ms-grid-row: 2;
   grid-row: 2;
-  font-size: 10px;
-  font-size: 0.625rem;
-  line-height: 0.9375rem;
+  font-size: 13px;
+  font-size: 0.8125rem;
+  line-height: 1.21875rem;
 }
 .testimony-card hr {
   width: 100%;

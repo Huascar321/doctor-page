@@ -1,17 +1,29 @@
 .card {
-  padding-left: 20px;
+  padding: 20px;
+  /* padding-left: 20px; */
   @include card;
   &__icon {
     display: flex;
-    width: 22%;
-    height: 25%;
+    /* width: 22%;
+    height: 25%; */
+    width: 59.09px;
+    height: 56.5px;
     border-radius: 50%;
     justify-content: center;
     background-color: $color-secundario;
     & img {
-      width: 100%;
-      height: 100%;
+      width: 60%;
+      -webkit-filter: invert(1);
+      filter: invert(1);
     }
+    @include media('mobile-l') {
+      margin-right: 15px;
+    }
+  }
+  @include media('mobile-l') {
+    height: 144px;
+    flex-direction: row;
+    align-items: center;
   }
 }
 
@@ -20,33 +32,36 @@
   margin-top: 15px;
   .skill-info__title {
     margin: 0;
-    font-weight: bold;
+    font-weight: 400;
     letter-spacing: 2.5px;
-    @include font-size(20px);
+    @include font-size(24px);
   }
   .skill-info__description {
     margin-top: 5px;
     color: #5d6174;
-    @include font-size(15px);
+    @include font-size(18px);
   }
 }
 
 .testimony-card {
-  padding-top: 45px;
+  padding-top: 50px;
   color: #5d6174;
   @include card;
   &__text {
     width: 88%;
     align-self: center;
     text-align: center;
-    @include font-size(15px);
+    color: get-opacity(#5d6174,0.8);
+    @include font-size(18px);
   }
   &__person {
     display: grid;
-    grid-template-columns: 25% 75%;
+    /* grid-template-columns: 25% 75%; */
+    grid-template-columns: 70px 65%;
     grid-template-rows: 25px 25px;
     width: 88%;
     margin-top: 5px;
+    margin-bottom: 40px;
     align-self: center;
     & img {
       grid-column: 1;
@@ -57,15 +72,15 @@
     &-info {
       grid-column: 2;
       width: 50%;
+      white-space: nowrap;
       & span {
         grid-row: 1;
         font-weight: 700;
-        white-space: nowrap;
-        @include font-size(14px);
+        @include font-size(18px);
       }
       & p {
         grid-row: 2;
-        @include font-size(10px);
+        @include font-size(13px);
       }
     }
   }
