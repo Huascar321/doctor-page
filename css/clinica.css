@@ -715,7 +715,7 @@ nav a:hover {
   max-height: 800px;
   padding-top: 35px;
   padding-bottom: 5%;
-  margin-bottom: 100px;
+  margin-bottom: 115px;
   background-color: #0077B6;
 }
 .main-cover .title {
@@ -1310,4 +1310,24 @@ footer .footer-info__email {
   font-size: 18px;
   font-size: 1.125rem;
   line-height: 1.6875rem;
+}
+
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  -webkit-box-shadow: 2px 2px 3px #999;
+          box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+
+.my-float {
+  margin-top: 16px;
 }
