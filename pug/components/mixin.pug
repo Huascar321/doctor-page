@@ -1,9 +1,10 @@
-mixin main-cover(name,occupation)
+mixin main-cover(name,text,text2,text_button)
   section.main-cover 
     .title 
       h1.title__doctor=name
-      hr
-      p.title__occupation=occupation
+      p.title__text--one=text
+      p.title__text--two=text2
+      +button(text_button)
     .doctor-photo 
 
 mixin skill-card(title,description,icon)
@@ -75,3 +76,7 @@ mixin modal(title,id,text,link)
           p=text
         div(class="modal-footer")
           a(href=link target="_blank" class="btn btn-primary") Reservar cita
+
+mixin button(text)
+  button(class="default-button")
+    .default=text

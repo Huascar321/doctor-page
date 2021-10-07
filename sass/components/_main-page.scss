@@ -12,33 +12,39 @@
   justify-content: center;
   background-color: $color-secundario;
   & .title {
-    text-align: center;
-    letter-spacing: 2.5px;
+    width: 88%;
+    margin: 0 auto;
     color: #fff;
     & .title__doctor {
       margin: 0;
       padding: 0;
-      @include font-size(20px);
-      @include media('mobile-l') {
+      color: $color-primario;
+      letter-spacing: 2.5px;
+      @include font-size(16px);
+      /* @include media('mobile-l') {
         @include font-size(24px)
-      }
+      } */
     }
-    & hr {
-      /* width: 75%; */
-      width: 210px;
-      margin: 0 auto;
-      border: 0.5px solid $color-primario;
-      @include media('mobile-l') {
-        width: 242px;
-      }
+    & .title__text--one {
+      margin-top: 7px;
+      margin-bottom: 0;
+      font-family: $Fuente2;
+      @include font-size(39px);
+      line-height: 45px;
     }
-    & .title__occupation {
+    & .title__text--two {
+      margin-top: 12px;
+      margin-bottom: 20px;
+      @include font-size(18px);
+      line-height: 29px;
+    }
+    /* & .title__occupation {
       font-weight: 400;
       @include font-size(15px);
       @include media('mobile-l') {
         @include font-size(18px)
       }
-    }
+    } */
   }
   & .doctor-photo {
     /* height: 357px; */
