@@ -1,0 +1,31 @@
+.default-button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  border-radius: 22px;
+  padding: 16px 36px;
+  font-weight: 500;
+  line-height: 20px;
+  -webkit-transform: scale(var(--s, 0.97));
+          transform: scale(var(--s, 0.97));
+  box-shadow: 0 var(--s-y, 4px) var(--s-b, 12px) rgba(0, 9, 61, 0.16);
+  color: #fff;
+  background: #2a5daa;
+  transition: box-shadow .3s, -webkit-transform .3s;
+  transition: transform .3s, box-shadow .3s;
+  transition: transform .3s, box-shadow .3s, -webkit-transform .3s;
+  letter-spacing: 2.5px;
+  @include font-size(15px);
+  &:not(.added):hover {
+    --s: 1;
+    --s-y: 8px;
+    --s-b: 20px;
+  }
+  &:not(.added):active {
+    --s: .94;
+    --s-y: 2px;
+    --s-b: 6px;
+  }
+}

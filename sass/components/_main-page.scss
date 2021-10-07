@@ -1,11 +1,15 @@
 .main-cover {
+  display: flex;
+  flex-wrap: wrap;
   width: 100vw;
+  /* width: 1000px; */
   /* height: 425px; */
   height: 133vw;
   max-height: 800px;
   padding-top: 35px;
   padding-bottom: 5%;
   margin-bottom: 115px;
+  justify-content: center;
   background-color: $color-secundario;
   & .title {
     text-align: center;
@@ -42,12 +46,34 @@
     max-height: 739px;
     width: 88%;
     max-width: 595px;
-    margin-top: 45px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 20px;
     background-image: url($doctor-img);
     background-size: cover;
     background-repeat: no-repeat;
+  }
+}
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  margin-top: 50px;
+  padding-top: 45px;
+  padding-bottom: 60px;
+  background-color: #fff;
+  &__info {
+    width: 88%;
+    margin: 0 auto;
+    &-title {
+      color: $color-primario;
+      letter-spacing: 2px;
+      font-weight: 600;
+      @include font-size(16px);
+    }
+    &-text {
+      margin-top: 25px;
+      @include font-size(18px);
+    }
   }
 }
 
@@ -84,28 +110,6 @@
     background-image: url("../../assets/img/clinica-4.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-  }
-}
-
-.about {
-  width: 100vw;
-  margin-top: 50px;
-  padding-top: 45px;
-  padding-bottom: 60px;
-  background-color: #fff;
-  &__info {
-    width: 88%;
-    margin: 0 auto;
-    &-title {
-      color: $color-primario;
-      letter-spacing: 2px;
-      font-weight: 600;
-      @include font-size(16px);
-    }
-    &-text {
-      margin-top: 25px;
-      @include font-size(18px);
-    }
   }
 }
 
