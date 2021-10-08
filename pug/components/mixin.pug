@@ -1,11 +1,16 @@
 mixin main-cover(name,text,text2,text_button)
-  section.main-cover 
-    .title 
-      h1.title__doctor=name
-      p.title__text--one=text
-      p.title__text--two=text2
-      +button(text_button)
-    .doctor-photo 
+  section(class="section home-hero")
+    .container-default
+      .home-hero-wrapper
+        .title 
+          h1.title__doctor=name
+          p.title__text--one=text
+          p.title__text--two=text2
+          +button(text_button)
+        div(class="split-content home-right")
+          div(class="image-wrapper home-hero")
+            img(src="../../assets/img/clinica-1.jpg", alt="Imagen de la doctora")
+    div(class="bg home-hero")
 
 mixin skill-card(title,description,icon)
   .card

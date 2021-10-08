@@ -4,8 +4,6 @@
   @include card;
   &__icon {
     display: flex;
-    /* width: 22%;
-    height: 25%; */
     width: 59.09px;
     height: 56.5px;
     border-radius: 50%;
@@ -25,6 +23,15 @@
     flex-direction: row;
     align-items: center;
   }
+  @include media(tablet) {
+    /* width: 229px; */
+    width: 30%;
+    height: auto;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 9px;
+    margin-right: 9px;
+  }
 }
 
 .skill-info {
@@ -32,8 +39,9 @@
   margin-top: 15px;
   .skill-info__title {
     margin: 0;
+    font-family: $Fuente2;
     font-weight: 400;
-    letter-spacing: 2.5px;
+    letter-spacing: 1.5px;
     @include font-size(24px);
   }
   .skill-info__description {

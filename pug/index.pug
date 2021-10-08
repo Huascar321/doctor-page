@@ -1,11 +1,12 @@
 extend components/plantilla.pug
 block contenidos
   main(id="main") 
-    +main-cover('DRA. PAOLA TERRAZAS','Tu profesional favorita en Estética dental','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum eget vel, nunc nulla feugiat. Metus ut ultricies faucibus.','Reserva tu cita')
+    +main-cover('DRA. PAOLA TERRAZAS','Tu profesional favorita en Estética dental','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum eget vel, nunc nulla feugiat. Metus ut ultricies faucibus.','RESERVA TU CITA')
     section(id="skills")
-      +skill-card('EXPERTA','En estética y tratamientos dentales.','like-icon.svg')
-      +skill-card('ESPECIALISTA','Diseñar sonrisas.','heart-icon.svg')
-      +skill-card('PREPARADA','En brindar el mejor servicio.','star-icon.svg')
+      .skills-container
+        +skill-card('Experta','Lorem ipsum dolor sit amet, consectetur adipiscing elit aliquet in','like-icon.svg')
+        +skill-card('Especialista','Lorem ipsum dolor sit amet, consectetur adipiscing elit aliquet in','heart-icon.svg')
+        +skill-card('Preparada','Lorem ipsum dolor sit amet, consectetur adipiscing elit aliquet in','star-icon.svg')
     section(id="about")
       +about('SOBRE MÍ','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin nibh cursus at sed sagittis amet, sed. Tristique id nibh lobortis nunc elementum. Tellus quam mauris aenean turpis vulputate sodales nullam lobortis. Vulputate tortor tincidun. Cras facilisis nulla ut tortor porttitor placerat. Nam lacinia, mi non lacinia suscipit, urna est iaculis arcu, id cursus quam risus sit amet diam. Vivamus feugiat, est congue eleifend tempus, lectus ligula sollicitudin elit, et lobortis quam lorem sit amet nisl. Maecenas vel enim scelerisque, rutrum nunc ac, euismod neque.')
     section(id="services")
