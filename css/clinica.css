@@ -712,6 +712,7 @@ nav a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  /* flex-direction: column; */
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100vw;
@@ -723,6 +724,7 @@ nav a:hover {
 .about__info {
   width: 88%;
   margin: 0 auto;
+  max-width: 572px;
 }
 .about__info-title {
   color: #023E8A;
@@ -737,6 +739,29 @@ nav a:hover {
   font-size: 18px;
   font-size: 1.125rem;
   line-height: 1.6875rem;
+}
+@media only screen and (min-width: 1024px) {
+  .about__info {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    max-width: 456px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .about {
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .about {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .doctor-cover {
@@ -773,6 +798,15 @@ nav a:hover {
   background-image: url("../../assets/img/clinica-4.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media only screen and (min-width: 1024px) {
+  .doctor-cover {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    max-width: 470px;
+    max-height: 530px;
+  }
 }
 
 .video {

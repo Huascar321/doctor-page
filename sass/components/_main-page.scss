@@ -1,5 +1,6 @@
 .about {
   display: flex;
+  /* flex-direction: column; */
   flex-wrap: wrap;
   width: 100vw;
   margin-top: 50px;
@@ -9,6 +10,7 @@
   &__info {
     width: 88%;
     margin: 0 auto;
+    max-width: 572px;
     &-title {
       color: $color-primario;
       letter-spacing: 2px;
@@ -19,6 +21,17 @@
       margin-top: 25px;
       @include font-size(18px);
     }
+    @include media(desktop-s) {
+      order: 2;
+      max-width: 456px;
+    }
+  }
+  @include media(tablet) {
+    text-align: center;
+    justify-content: center;
+  }
+  @include media(desktop-s) {
+    align-items: center;
   }
 }
 
@@ -55,6 +68,11 @@
     background-image: url("../../assets/img/clinica-4.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+  }
+  @include media(desktop-s) {
+    order: 1;
+    max-width: 470px;
+    max-height: 530px;
   }
 }
 
