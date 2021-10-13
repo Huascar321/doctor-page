@@ -716,9 +716,11 @@ nav a:hover {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100vw;
-  margin-top: 50px;
-  padding-top: 45px;
-  padding-bottom: 60px;
+  margin-top: 90px;
+  padding-top: 70px;
+  padding-bottom: 130px;
+  /* padding-top: 45px;
+  padding-bottom: 60px; */
   background-color: #fff;
 }
 .about__info {
@@ -740,12 +742,27 @@ nav a:hover {
   font-size: 1.125rem;
   line-height: 1.6875rem;
 }
+@media only screen and (min-width: 768px) {
+  .about__info {
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+}
 @media only screen and (min-width: 1024px) {
   .about__info {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
-    max-width: 456px;
+    margin: 0;
+    margin-left: 75px;
+    max-width: 400px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .about__info {
+    max-width: 486px;
+    margin-left: 0;
+    /* margin-right: 145px; */
   }
 }
 @media only screen and (min-width: 768px) {
@@ -758,12 +775,12 @@ nav a:hover {
 }
 @media only screen and (min-width: 1024px) {
   .about {
+    text-align: start;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
 }
-
 .doctor-cover {
   width: 95%;
   max-width: 586px;
@@ -773,15 +790,6 @@ nav a:hover {
   margin-top: 45px;
   position: relative;
   background-color: #fff;
-  /* &__lines {
-    width: 88%;
-    height: 80%;
-    position: absolute;
-    top: 155px;
-    background: url('../../assets/img/lines.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-  } */
 }
 .doctor-cover__rectangle {
   width: 78%;
@@ -804,8 +812,24 @@ nav a:hover {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
-    max-width: 470px;
-    max-height: 530px;
+    /* max-width: 470px;
+    max-height: 530px; */
+    max-width: 547px;
+    max-height: 605px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .doctor-cover {
+    max-width: 586px;
+    max-height: 648px;
+    margin-right: 75px;
+  }
+}
+@media only screen and (min-width: 1480px) {
+  .doctor-cover {
+    max-width: 686px;
+    max-height: 748px;
+    margin-right: 75px;
   }
 }
 
@@ -938,7 +962,7 @@ nav a:hover {
   width: 88vw;
   /* max-width: 694px; */
   height: 369px;
-  margin: 25px 0;
+  margin: 25px auto;
   padding: 15px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -946,7 +970,7 @@ nav a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /* border: 0.1px get-opacity($color-primario, 0.2) solid; */
+  border: 0.5px rgba(2, 62, 138, 0.2) solid;
   background-color: #fff;
 }
 .services__carrousel-icon {
@@ -1003,6 +1027,14 @@ nav a:hover {
   font-size: 1rem;
   line-height: 1.5rem;
 }
+@media only screen and (min-width: 768px) {
+  .services__carrousel {
+    width: 390px;
+    height: 445px;
+    margin-right: 45px;
+    margin-left: 45px;
+  }
+}
 
 .skills-container {
   display: -webkit-box;
@@ -1030,6 +1062,30 @@ nav a:hover {
 @media only screen and (min-width: 1024px) {
   .skills-container {
     margin-top: 95px;
+  }
+}
+
+.testimonials-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media only screen and (min-width: 1024px) {
+  .testimonials-container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
@@ -1216,9 +1272,8 @@ nav a:hover {
           justify-content: center;
   width: 88%;
   height: auto;
-  margin-top: 12px;
-  margin-bottom: 12px;
-  /* margin: 30px auto; */
+  margin-top: 22px;
+  margin-bottom: 22px;
   background-color: #fff;
 }
 .card__icon {
@@ -1267,8 +1322,8 @@ nav a:hover {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start;
-    margin-left: 9px;
-    margin-right: 9px;
+    margin-left: 15px;
+    margin-right: 15px;
   }
 }
 
@@ -1308,9 +1363,8 @@ nav a:hover {
           justify-content: center;
   width: 88%;
   height: auto;
-  margin-top: 12px;
-  margin-bottom: 12px;
-  /* margin: 30px auto; */
+  margin-top: 22px;
+  margin-bottom: 22px;
   background-color: #fff;
 }
 .testimony-card__text {
@@ -1375,12 +1429,26 @@ nav a:hover {
   font-size: 1.125rem;
   line-height: 1.6875rem;
 }
+@media only screen and (min-width: 768px) {
+  .testimony-card__person-info span {
+    font-size: 21px;
+    font-size: 1.3125rem;
+    line-height: 1.96875rem;
+  }
+}
 .testimony-card__person-info p {
   -ms-grid-row: 2;
   grid-row: 2;
   font-size: 13px;
   font-size: 0.8125rem;
   line-height: 1.21875rem;
+}
+@media only screen and (min-width: 768px) {
+  .testimony-card__person-info p {
+    font-size: 14px;
+    font-size: 0.875rem;
+    line-height: 1.3125rem;
+  }
 }
 .testimony-card hr {
   width: 100%;
@@ -1390,6 +1458,28 @@ nav a:hover {
   border-left: 0;
   -ms-flex-item-align: end;
       align-self: flex-end;
+}
+@media only screen and (min-width: 1024px) {
+  .testimony-card hr {
+    margin-top: 15px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .testimony-card {
+    max-width: 660px;
+    max-height: 306px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .testimony-card {
+    width: 30%;
+    height: auto;
+    max-width: 390px;
+    /* max-height: 445px; */
+    padding-top: 60px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
 }
 
 footer {
