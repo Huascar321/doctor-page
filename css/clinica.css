@@ -960,9 +960,10 @@ nav a:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 88vw;
+  min-width: 288px;
   /* max-width: 694px; */
+  margin: 0 auto;
   height: 369px;
-  margin: 25px auto;
   padding: 15px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1031,8 +1032,8 @@ nav a:hover {
   .services__carrousel {
     width: 390px;
     height: 445px;
-    margin-right: 45px;
-    margin-left: 45px;
+    /* margin-right: 45px;
+    margin-left: 45px; */
   }
 }
 

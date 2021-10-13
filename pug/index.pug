@@ -13,11 +13,26 @@ block contenidos
       .services
         span.services__title--one SERVICIOS  
         span.services__title--two Experimentada en multiples prácticas
-        .carousel
-          +carousel('Limpieza general','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique libero viverra ultricies commodo.','tooth-clean.svg','modal1')
-          +carousel('Eliminación de caries','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique libero viverra ultricies commodo.','tooth-cavities.svg','modal2')
-          +carousel('Blanqueamiento','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique libero viverra ultricies commodo.','tooth-white.svg','modal3')
-          +carousel('Armonización Facial','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique libero viverra ultricies commodo.','facial-harmonization.svg','modal4')
+      section(id="agenda" class="custom-slider")
+        div(class="container-lg py-5")
+          div(class="container-lg px-0")
+            div(class="row")
+              div(class="col clearfix")
+                span(class="title-section d-flex justify-content-end")
+                  button(class="btn btn-archive btn-sm prev-btn" type="button")
+                    i(class="fas fa-arrow-left")
+                    span(class="visually-hidden") Previous
+                  button(class="btn btn-archive btn-sm next-btn" type="button")
+                    i(class="fas fa-arrow-right")
+                    span(class="visually-hidden") Next
+          .swiper-container
+            .swiper-wrapper
+              +carousel('Limpieza general','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique libero viverra ultricies commodo.','tooth-clean.svg','modal1')
+              +carousel('Eliminación de caries','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique libero viverra ultricies commodo.','tooth-cavities.svg','modal2')
+              +carousel('Blanqueamiento','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique libero viverra ultricies commodo.','tooth-white.svg','modal3')
+              +carousel('Armonización Facial','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique libero viverra ultricies commodo.','facial-harmonization.svg','modal4')
+              +carousel('Otra cosa','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique libero viverra ultricies commodo.','facial-harmonization.svg','modal4')
+              +carousel('Otra cosa 2','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique libero viverra ultricies commodo.','facial-harmonization.svg','modal4')
         +modal('Limpieza general','modal1','Por muy bien que te cepilles los dientes o uses el hilo dental, siempre quedan zonas difíciles de alcanzar. Una limpieza dental puede ayudarte a tener los dientes realmente limpios!','https://cutt.ly/kEEAs9Y')
         +modal('Eliminación de caries','modal2', 'En nuestra boca, al comer, las bacterias y los restos de comida se acaban juntando en la superficie de los dientes y formando la placa dental. Si ésta no se elimina, acaba atacando el esmalte del diente. Si tienes caries o sientes tenerlas, acude con nosotros lo más pronto posible!','https://cutt.ly/BEEAxyJ')
         +modal('Blanqueamiento','modal3', '...','https://cutt.ly/IEEAbz6')
