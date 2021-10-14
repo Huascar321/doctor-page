@@ -1,38 +1,24 @@
-@import url("https://use.fontawesome.com/releases/v5.13.0/css/all.css");
-:root {
-  /* GENERAL FONT */
-  --font1: "Titillium Web", sans-serif;
-  --font2: "Roboto", sans-serif;
-  /* GENERAL COLOR */
-  --bg-col-1: #0059b3;
-  --bg-col-2: #dc3545;
-  --bg-col-3: #fff;
-  --bg-col-4: #024c96;
-  --tx-color-1: #fff;
-  --tx-color-2: #000;
-  --tx-color-3: #0059b3;
-  --tx-slider-section-title: #212529;
-  --bg-slider-section: rgb(250, 250, 250);
-  --bg-slider-card-4: #fff;
-  --tx-slider-card-4: #0059b3;
-  --tx-button: #fff;
-  --bg-button: #0059b3;
+.swiper {
+  width: 100%;
+  height: 50%;
 }
 
-/* end dark mode css */
-.btn-archive {
-  color: var(--tx-button);
-  background: var(--bg-button);
-  border-color: var(--bg-button-border);
-  -webkit-transition: all 0.3s linear 0s;
-  transition: all 0.3s linear 0s;
-}
-.btn-archive:hover {
-  color: var(--tx-button-hover);
-  background-color: var(--bg-button-hover);
-  border-color: var(--bg-button-hover);
-}
-.btn-archive:focus {
-  -webkit-box-shadow: 0 0 0 0.25rem var(--bg-button-focus);
-  box-shadow: 0 0 0 0.25rem var(--bg-button-focus);
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
 }

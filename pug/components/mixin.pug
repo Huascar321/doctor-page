@@ -63,13 +63,12 @@ mixin footer-info(copyright,developer_sign,email)
 
 mixin carousel(title,description,icon,id)
   .swiper-slide
-    .services__carrousel 
-          .services__carrousel-icon
-            img(src="../../assets/icons/carrousel/"+icon, alt="Icono")
-          .services__carrousel-info
-            span.services__carrousel-info__title=title
-            span.services__carrousel-info__description=description
-            a(data-bs-toggle="modal" data-bs-target="#"+id) MÁS INFORMACIÓN
+    .swiper-slide-icon
+      img(src="../../assets/icons/carrousel/"+icon, alt="Icono")
+    .swiper-slide-info
+      span.swiper-slide-info__title=title
+      span.swiper-slide-info__description=description
+      a(data-bs-toggle="modal" data-bs-target="#"+id) MÁS INFORMACIÓN
   
 mixin modal(title,id,text,link)
   div(class="modal" id=id tabindex="-1" aria-labelledby="label_"+id aria-hidden="true")
@@ -86,20 +85,4 @@ mixin modal(title,id,text,link)
 mixin button(text)
   button(class="default-button")
     .default=text
-
-mixin carousel-container()
-  section(id="agenda" class="custom-slider")
-    div(class="container-lg py-5")
-      div(class="container-lg px-0")
-        div(class="row")
-          div(class="col clearfix")
-            span(class="title-section d-flex justify-content-end")
-              button(class="btn btn-archive btn-sm prev-btn" type="button")
-                i(class="fas fa-arrow-left")
-                span(class="visually-hidden") Previous
-              button(class="btn btn-archive btn-sm next-btn" type="button")
-                i(class="fas fa-arrow-right")
-                span(class="visually-hidden") Next
-      .swiper-container
-        .swiper-wrapper
           

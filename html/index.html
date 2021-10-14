@@ -9,7 +9,7 @@
       <link rel="stylesheet" href="../../css/bootstrap.css"><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
-<link rel='stylesheet' href='https://unpkg.com/swiper/swiper-bundle.min.css'>
+      <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
       <link rel="stylesheet" href="../../css/clinica.css"><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
@@ -93,57 +93,33 @@
           </div>
       </section>
       <section id="services">
-        <div class="services"><span class="services__title--one">SERVICIOS  </span><span class="services__title--two">Experimentada en multiples prácticas</span></div>
-        <section class="custom-slider" id="agenda">
-          <div class="container-lg py-5">
-            <div class="container-lg px-0">
-              <div class="row">
-                <div class="col clearfix"><span class="title-section d-flex justify-content-end">
-                    <button class="btn btn-archive btn-sm prev-btn" type="button"><i class="fas fa-arrow-left"></i><span class="visually-hidden">Previous</span></button>
-                    <button class="btn btn-archive btn-sm next-btn" type="button"><i class="fas fa-arrow-right"></i><span class="visually-hidden">Next</span></button></span></div>
+        <div class="services"><span class="services__title--one">SERVICIOS  </span><span class="services__title--two">Experimentada en multiples prácticas </span></div>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="swiper-slide-icon"><img src="../../assets/icons/carrousel/tooth-clean.svg" alt="Icono"></div>
+                <div class="swiper-slide-info"><span class="swiper-slide-info__title">Limpieza general</span><span class="swiper-slide-info__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique libero viverra ultricies commodo.</span><a data-bs-toggle="modal" data-bs-target="#modal1">MÁS INFORMACIÓN</a></div>
               </div>
-            </div>
-            <div class="swiper-container">
-              <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="services__carrousel"> 
-                      <div class="services__carrousel-icon"><img src="../../assets/icons/carrousel/tooth-clean.svg" alt="Icono"></div>
-                      <div class="services__carrousel-info"><span class="services__carrousel-info__title">Limpieza general</span><span class="services__carrousel-info__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique libero viverra ultricies commodo.</span><a data-bs-toggle="modal" data-bs-target="#modal1">MÁS INFORMACIÓN</a></div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="services__carrousel"> 
-                      <div class="services__carrousel-icon"><img src="../../assets/icons/carrousel/tooth-cavities.svg" alt="Icono"></div>
-                      <div class="services__carrousel-info"><span class="services__carrousel-info__title">Eliminación de caries</span><span class="services__carrousel-info__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique libero viverra ultricies commodo.</span><a data-bs-toggle="modal" data-bs-target="#modal2">MÁS INFORMACIÓN</a></div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="services__carrousel"> 
-                      <div class="services__carrousel-icon"><img src="../../assets/icons/carrousel/tooth-white.svg" alt="Icono"></div>
-                      <div class="services__carrousel-info"><span class="services__carrousel-info__title">Blanqueamiento</span><span class="services__carrousel-info__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique libero viverra ultricies commodo.</span><a data-bs-toggle="modal" data-bs-target="#modal3">MÁS INFORMACIÓN</a></div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="services__carrousel"> 
-                      <div class="services__carrousel-icon"><img src="../../assets/icons/carrousel/facial-harmonization.svg" alt="Icono"></div>
-                      <div class="services__carrousel-info"><span class="services__carrousel-info__title">Armonización Facial</span><span class="services__carrousel-info__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique libero viverra ultricies commodo.</span><a data-bs-toggle="modal" data-bs-target="#modal4">MÁS INFORMACIÓN</a></div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="services__carrousel"> 
-                      <div class="services__carrousel-icon"><img src="../../assets/icons/carrousel/facial-harmonization.svg" alt="Icono"></div>
-                      <div class="services__carrousel-info"><span class="services__carrousel-info__title">Otra cosa</span><span class="services__carrousel-info__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique libero viverra ultricies commodo.</span><a data-bs-toggle="modal" data-bs-target="#modal4">MÁS INFORMACIÓN</a></div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="services__carrousel"> 
-                      <div class="services__carrousel-icon"><img src="../../assets/icons/carrousel/facial-harmonization.svg" alt="Icono"></div>
-                      <div class="services__carrousel-info"><span class="services__carrousel-info__title">Otra cosa 2</span><span class="services__carrousel-info__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique libero viverra ultricies commodo.</span><a data-bs-toggle="modal" data-bs-target="#modal4">MÁS INFORMACIÓN</a></div>
-                    </div>
-                  </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide-icon"><img src="../../assets/icons/carrousel/tooth-cavities.svg" alt="Icono"></div>
+                <div class="swiper-slide-info"><span class="swiper-slide-info__title">Eliminación de caries</span><span class="swiper-slide-info__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique libero viverra ultricies commodo.</span><a data-bs-toggle="modal" data-bs-target="#modal2">MÁS INFORMACIÓN</a></div>
               </div>
-            </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide-icon"><img src="../../assets/icons/carrousel/tooth-white.svg" alt="Icono"></div>
+                <div class="swiper-slide-info"><span class="swiper-slide-info__title">Blanqueamiento</span><span class="swiper-slide-info__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique libero viverra ultricies commodo.</span><a data-bs-toggle="modal" data-bs-target="#modal3">MÁS INFORMACIÓN</a></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide-icon"><img src="../../assets/icons/carrousel/facial-harmonization.svg" alt="Icono"></div>
+                <div class="swiper-slide-info"><span class="swiper-slide-info__title">Armonización Facial</span><span class="swiper-slide-info__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique libero viverra ultricies commodo.</span><a data-bs-toggle="modal" data-bs-target="#modal4">MÁS INFORMACIÓN</a></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide-icon"><img src="../../assets/icons/carrousel/facial-harmonization.svg" alt="Icono"></div>
+                <div class="swiper-slide-info"><span class="swiper-slide-info__title">Otra cosa</span><span class="swiper-slide-info__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique libero viverra ultricies commodo.</span><a data-bs-toggle="modal" data-bs-target="#modal4">MÁS INFORMACIÓN</a></div>
+              </div>
           </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
             <div class="modal" id="modal1" tabindex="-1" aria-labelledby="label_modal1" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
@@ -200,7 +176,7 @@
                 </div>
               </div>
             </div>
-        </section>
+        </div>
       </section>
       <section id="testimonials">
         <div class="testimony"><span>TESTIMONIOS</span></div>
@@ -250,7 +226,8 @@
         <div class="footer-info"><span class="footer-info__copyright">Copyright © 2021 • Paola Terrazas</span><span class="footer-info__copyright-bellow">All right reserved</span><span class="footer-info__developer-sign">Desarrollado por Huáscar Suárez</span><span class="footer-info__email">drapaolaterrazas@gmail.com</span></div>
     </footer>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"><a class="float" href="https://api.whatsapp.com/send?phone=59172668229&amp;text=Hola!%20Quisiera%20una%20consulta%20%F0%9F%98%81" target="_blank"><i class="fa fa-whatsapp my-float"></i></a>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script><script src='https://unpkg.com/swiper/swiper-bundle.min.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"> </script>
     <script src="../../js/script.js"></script>
     <script src="../../js/bootstrap.bundle.min.js"> </script>
   </body>
