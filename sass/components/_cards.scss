@@ -4,8 +4,11 @@
   @include card;
   &__icon {
     display: flex;
-    width: 59.09px;
-    height: 56.5px;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+    /* width: 59.09px;
+    height: 56.5px; */
     border-radius: 50%;
     justify-content: center;
     background-color: $color-secundario;
@@ -27,6 +30,10 @@
     /* width: 229px; */
     width: 30%;
     height: auto;
+    min-width: 227px;
+    min-height: 288px;
+    max-width: 430px;
+    max-height: 166px;
     flex-direction: column;
     align-items: start;
     margin-left: 15px;
@@ -36,18 +43,17 @@
 
 .skill-info {
   width: 90%;
-  margin-top: 15px;
   .skill-info__title {
     margin: 0;
     font-family: $Fuente2;
     font-weight: 400;
     letter-spacing: 1.5px;
-    @include font-size(24px);
+    @include font-size(26px);
   }
   .skill-info__description {
     margin-top: 5px;
     color: #5d6174;
-    @include font-size(18px);
+    @include font-size(15px);
   }
 }
 
@@ -116,8 +122,8 @@
   @include media(desktop-s) {
     width: 30%;
     height: auto;
-    max-width: 390px;
-    /* max-height: 445px; */
+    max-width: 429px;
+    max-height: 389px;
     padding-top: 60px;
     margin-left: 15px;
     margin-right: 15px;

@@ -838,8 +838,9 @@ nav a:hover {
   display: -ms-flexbox;
   display: flex;
   width: 88%;
-  /* height: 220px; */
   height: 50vw;
+  max-width: 1055px;
+  max-height: 593px;
   margin-top: 55px;
   margin-left: auto;
   margin-right: auto;
@@ -872,17 +873,35 @@ nav a:hover {
 }
 
 .testimony {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 88%;
+  max-width: 1340px;
+  margin-top: 165px;
   margin-left: auto;
   margin-right: auto;
 }
-.testimony span {
+.testimony__title--one {
   letter-spacing: 2px;
   font-weight: 600;
   color: #023E8A;
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
+}
+.testimony__title--two {
+  max-width: 486px;
+  font-family: "DM Serif Display", serif;
+  margin-top: 5px;
+  font-size: 38px;
+  font-size: 2.375rem;
+  line-height: 3.5625rem;
+  line-height: 45px;
 }
 
 .ubication {
@@ -894,7 +913,9 @@ nav a:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   /* height: 268px; */
+  width: 100%;
   height: 70vw;
+  /* max-height: 882px; */
   margin-top: 45px;
   position: relative;
   /* background-color: $color-secundario; */
@@ -911,6 +932,20 @@ nav a:hover {
   font-size: 1.25rem;
   line-height: 1.875rem;
 }
+@media only screen and (min-width: 768px) {
+  .ubication span {
+    font-size: 24px;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .ubication span {
+    font-size: 28px;
+    font-size: 1.75rem;
+    line-height: 2.625rem;
+  }
+}
 .ubication__maps {
   height: 0;
   padding-bottom: 56.25%;
@@ -920,7 +955,10 @@ nav a:hover {
   left: 0;
   top: 0;
   /* height: 185px; */
-  height: 58vw;
+  /* height: 58vw; */
+  height: 100%;
+  /* max-height: 705px; */
+  max-height: 505px;
   width: 100%;
 }
 
@@ -933,22 +971,25 @@ nav a:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 88%;
+  max-width: 1340px;
   margin: 50px auto;
 }
 .services__title--one {
   letter-spacing: 2px;
   font-weight: 600;
   color: #023E8A;
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
 }
 .services__title--two {
+  max-width: 486px;
+  font-family: "DM Serif Display", serif;
   margin-top: 5px;
-  font-weight: bold;
-  font-size: 20px;
-  font-size: 1.25rem;
-  line-height: 1.875rem;
+  font-size: 38px;
+  font-size: 2.375rem;
+  line-height: 3.5625rem;
+  line-height: 45px;
 }
 
 .swiper-slide {
@@ -1040,6 +1081,8 @@ nav a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 88%;
+  margin: 0 auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1276,8 +1319,11 @@ nav a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 59.09px;
-  height: 56.5px;
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+  /* width: 59.09px;
+  height: 56.5px; */
   border-radius: 50%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1311,6 +1357,10 @@ nav a:hover {
     /* width: 229px; */
     width: 30%;
     height: auto;
+    min-width: 227px;
+    min-height: 288px;
+    max-width: 430px;
+    max-height: 166px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1325,23 +1375,22 @@ nav a:hover {
 
 .skill-info {
   width: 90%;
-  margin-top: 15px;
 }
 .skill-info .skill-info__title {
   margin: 0;
   font-family: "DM Serif Display", serif;
   font-weight: 400;
   letter-spacing: 1.5px;
-  font-size: 24px;
-  font-size: 1.5rem;
-  line-height: 2.25rem;
+  font-size: 26px;
+  font-size: 1.625rem;
+  line-height: 2.4375rem;
 }
 .skill-info .skill-info__description {
   margin-top: 5px;
   color: #5d6174;
-  font-size: 18px;
-  font-size: 1.125rem;
-  line-height: 1.6875rem;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  line-height: 1.40625rem;
 }
 
 .testimony-card {
@@ -1470,8 +1519,8 @@ nav a:hover {
   .testimony-card {
     width: 30%;
     height: auto;
-    max-width: 390px;
-    /* max-height: 445px; */
+    max-width: 429px;
+    max-height: 389px;
     padding-top: 60px;
     margin-left: 15px;
     margin-right: 15px;
