@@ -12,9 +12,9 @@ nav .hamburger-lines {
 nav {
   width: 100%;
   position: fixed;
-  background: $color-primario;
+  background: $color-secundario;
   color: #000;
-  opacity: 0.85;
+  /* opacity: 0.85; */
   z-index: 100;
 }
 
@@ -53,7 +53,7 @@ nav a {
 
 @media (max-width: 768px) {
   nav {
-    opacity: 0.95;
+    /* opacity: 0.95; */
   }
 
   .navbar-container input[type="checkbox"],
@@ -85,7 +85,7 @@ nav a {
     top: 12px;
     right: 15px;
     border-radius: 25px;
-    background-color: $color-secundario;
+    background-color: $color-primario;
   }
 
   .navbar-container .hamburger-lines {

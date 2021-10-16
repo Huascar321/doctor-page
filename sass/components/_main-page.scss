@@ -4,8 +4,8 @@
   flex-wrap: wrap;
   width: 100vw;
   margin-top: 90px;
-  padding-top: 70px;
-  padding-bottom: 130px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   /* padding-top: 45px;
   padding-bottom: 60px; */
   background-color: #fff;
@@ -45,6 +45,8 @@
   @include media(desktop-s) {
     text-align: start;
     align-items: center;
+    padding-top: 160px;
+    padding-bottom: 160px;
   }
   @include media(desktop-m) {
   }
@@ -94,13 +96,22 @@
   }
 }
 
+.video-container {
+  background-color: #fff;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  @include media(desktop-s) {
+    padding-top: 160px;
+    padding-bottom: 160px;
+  }
+}
+
 .video {
   display: flex;
   width: 88%;
   height: 50vw;
   max-width: 1055px;
   max-height: 593px;
-  margin-top: 55px;
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
@@ -115,15 +126,30 @@
     position: relative;
     background-color: get-opacity(black, 0.4);
   }
-  & a {
+  &-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-secundario;
+    border-radius: 50%;
+    /* width: 124px;
+    height: 124px; */
+    min-width: 78px;
+    min-height: 76px;
+    width: 20%;
+    height: 30%;
+    max-width: 124px;
+    max-height: 124px;
+    position: absolute;
+    box-shadow: 0px 8px 83px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 8px 83px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 8px 83px 0px rgba(0,0,0,0.75);
+  }
+  & img {
     width: 23%;
     height: 30%;
-    position: absolute;
-    background-image: url("../../assets/icons/play.svg");
-    -webkit-filter: invert(1);
-    filter: invert(1);
-    background-size: contain;
-    background-repeat: no-repeat;
+    /* width: 31px;
+    height: 35px; */
   }
 }
 
@@ -132,7 +158,8 @@
   flex-direction: column;
   width: 88%;
   max-width: 1340px;
-  margin-top: 165px;
+  margin-top: 160px;
+  margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
   &__title--one {
@@ -197,6 +224,7 @@
   width: 88%;
   max-width: 1340px;
   margin: 50px auto;
+  margin-top: 80px;
   &__title--one {
     letter-spacing: 2px;
     font-weight: 600;
@@ -210,6 +238,16 @@
     @include font-size(38px);
     line-height: 45px;
   }
+  @include media(desktop-s) {
+    margin-top: 160px;
+  }
+}
+
+.swiper {
+  margin-bottom: 80px;
+  @include media(desktop-s) {
+    margin-bottom: 160px;
+  }
 }
 
 .swiper-slide {
@@ -221,7 +259,7 @@
   padding: 15px;
   justify-content: center;
   align-items: center;
-  /* border: 0.5px get-opacity($color-primario, 0.2) solid; */
+  border: 0.5px get-opacity($color-primario, 0.2) solid;
   background-color: #fff;
   &-icon {
     display: flex;
@@ -283,6 +321,7 @@
 .testimonials-container {
   display: flex;
   flex-direction: column;
+  margin-bottom: 160px;
   align-items: center;
   @include media(desktop-s) {
     justify-content: center;
