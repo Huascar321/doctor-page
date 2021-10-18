@@ -1,0 +1,90 @@
+mixin main-cover(name,text,text2,text_button)
+  section(class="section home-hero")
+    .container-default
+      .home-hero-wrapper
+        .title 
+          h1.title__doctor=name
+          p.title__text--one=text
+          p.title__text--two=text2
+          +button(text_button)
+        div(class="split-content home-right")
+          div(class="image-wrapper home-hero")
+            img(src="../../assets/img/clinica-1.jpg", alt="Imagen de la doctora")
+    div(class="bg home-hero")
+
+mixin skill-card(title,description,icon)
+  .card
+    .card__icon 
+      img(src="../../assets/icons/"+icon, alt="icon")
+    .skill-info
+      p.skill-info__title=title 
+      p.skill-info__description=description
+
+mixin about(title,description,text)
+  .about
+    .about__info
+      .about__info-title
+        span=title
+      .about__info-description
+        span=description
+      .about__info-text
+        p=text
+      +button("RESERVA TU CITA")
+    .doctor-cover 
+      .doctor-cover__rectangle 
+      .doctor-cover__photo 
+
+mixin video()
+  .light 
+    a(class="boxclose" id="boxclose" onclick="lightbox_close();")
+    video(id="doctor-video" width="600" controls)
+      source(src="../../assets/videos/doctor-video.mp4")
+  div(id="fade" onclick="lightbox_close();")
+
+mixin testimony-card(name,occupation,photo,text)
+  .testimony-card
+    p.testimony-card__text=text
+    .testimony-card__person
+      img(src="../../assets/img/testimonios/"+photo, alt="Foto de persona")
+      .testimony-card__person-info
+        span=name
+        p=occupation
+    hr
+
+mixin social-media(tiktok_link,instagram_link,facebook_link)
+  .social-media
+    a(href=tiktok_link target="_blank" class="social-media__tiktok")
+    a(href=instagram_link target="_blank" class="social-media__instagram")
+    a(href=facebook_link target="_blank" class="social-media__facebook")
+
+mixin footer-info(copyright,developer_sign,email)
+  .footer-info
+    span.footer-info__copyright=copyright
+    span.footer-info__copyright-bellow All right reserved
+    span.footer-info__developer-sign=developer_sign
+    span.footer-info__email=email
+
+mixin carousel(title,description,icon,id)
+  .swiper-slide
+    .swiper-slide-icon
+      img(src="../../assets/icons/carrousel/"+icon, alt="Icono")
+    .swiper-slide-info
+      span.swiper-slide-info__title=title
+      span.swiper-slide-info__description=description
+      a(data-bs-toggle="modal" data-bs-target="#"+id) MÁS INFORMACIÓN
+  
+mixin modal(title,id,text,link)
+  div(class="modal" id=id tabindex="-1" aria-labelledby="label_"+id aria-hidden="true")
+    div(class="modal-dialog modal-dialog-centered")
+      div(class="modal-content")
+        div(class="modal-header")
+          h5(class="modal-title" id="label_"+id)=title
+          button(type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close")
+        div(class="modal-body")
+          p=text
+        div(class="modal-footer")
+          a(href=link target="_blank" class="btn btn-primary") Reservar cita
+
+mixin button(text)
+  button(class="default-button")
+    .default=text

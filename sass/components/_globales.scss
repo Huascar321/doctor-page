@@ -1,0 +1,54 @@
+/* Variables */
+$Fuente1: 'DM Sans', sans-serif;
+$Fuente2: 'DM Serif Display', serif;
+$color-primario: #023E8A;
+$color-secundario: #0077B6;
+$color-fondo: #FBF7F3;
+$color-letra: #7a909d;
+
+/* Imágenes */
+$doctor-img: '../../assets/img/clinica-1.jpg';
+$video-img : '../../assets/img/clinica-5.jpg';
+
+/* Funciones */
+@function calculateRem($size) {
+  $remSize: $size/ 16px;
+  @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+  line-height: calculateRem($size)*1.5;
+}
+
+@mixin card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 88%;
+  height: auto;
+  margin-top: 22px;
+  margin-bottom: 22px;
+  background-color: #fff;
+}
+
+@function get-opacity($color, $amount) {
+  @return rgba($color, $amount);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $Fuente1;
+}
+
+main {
+  background-color: $color-fondo;
+}
+
+body {
+  background-color: $color-fondo;
+  @include font-size(18px);
+}

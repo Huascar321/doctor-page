@@ -1,0 +1,37 @@
+html
+  head 
+    title Swiper component
+    meta(charset="utf-8")
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, maximum-scale=1.0, user-scalable=no')
+    link(rel="stylesheet", href="https://unpkg.com/swiper@7/swiper-bundle.min.css")
+    link(rel="stylesheet", href="../../css/swiper.css")
+  body
+    div(class="swiper mySwiper")
+      .swiper-wrapper
+        .swiper-slide
+          .swiper-slide-icon
+            img(src="", alt="Icono")
+          .swiper-slide-info
+            span.swiper-slide-info__title titulo
+            span.swiper-slide-info__description lorembasico
+            a(data-bs-toggle="modal" data-bs-target="#") MÁS INFORMACIÓN
+        .swiper-slide
+          .swiper-slide-icon
+            img(src="", alt="Icono")
+          .swiper-slide-info
+            span.swiper-slide-info__title titulo2
+            span.swiper-slide-info__description lorembasico
+            a(data-bs-toggle="modal" data-bs-target="#") MÁS INFORMACIÓN
+        .swiper-slide
+          .swiper-slide-icon
+            img(src="", alt="Icono")
+          .swiper-slide-info
+            span.swiper-slide-info__title titulo3 
+            span.swiper-slide-info__description lorembasico
+            a(data-bs-toggle="modal" data-bs-target="#") MÁS INFORMACIÓN
+      .swiper-pagination
+      .swiper-button-prev
+      .swiper-button-next
+    script(src="https://unpkg.com/swiper/swiper-bundle.min.js") 
+    script(src="../../js/script.js") 
