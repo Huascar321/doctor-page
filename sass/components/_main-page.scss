@@ -114,6 +114,7 @@
   max-height: 593px;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 1%;
   justify-content: center;
   align-items: center;
   position: relative;
@@ -124,6 +125,7 @@
     width: 100%;
     height: 100%;
     position: relative;
+    border-radius: 1%;
     background-color: get-opacity(black, 0.4);
   }
   &-icon {
@@ -187,7 +189,7 @@
   width: 100%;
   /* height: 70vw; */
   /* max-height: 882px; */
-  margin-top: 45px;
+  /* margin-top: 45px; */
   position: relative;
   /* background-color: $color-secundario; */
   background-color: $color-primario;
@@ -324,14 +326,162 @@
 .testimonials-container {
   display: flex;
   flex-direction: column;
-  margin-bottom: 160px;
   align-items: center;
+  margin-bottom: 80px;
   @include media(desktop-s) {
     justify-content: center;
     flex-direction: row;
+    margin-bottom: 160px;
   }
 }
 
 .embed-responsive-item {
   width: 100%;
+}
+
+.posts-mobile {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  width: 88%;
+  margin: 80px auto;
+  justify-content: center;
+  align-content: start;
+  @include media(desktop-s) {
+    display: none;
+  }
+}
+
+.posts-desktop {
+  display: none;
+  @include media(desktop-s) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    width: 88%;
+    margin: 80px auto;
+    justify-content: center;
+    align-content: start;
+  }
+  @include media(desktop-l) {
+    display: none;
+  }
+}
+
+.posts-desktop-big {
+  display: none;
+  @include media(desktop-l) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    width: 100%;
+    height: 652px;
+    margin: 0 auto;
+    justify-content: center;
+    align-content: center;
+  }
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+  width: 88%;
+  max-width: 1340px;
+  margin-top: 80px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  &__title--one {
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: $color-primario;
+    @include font-size(18px);
+  }
+  &__title--two {
+    max-width: 486px;
+    font-family: $Fuente2;
+    margin-top: 5px;
+    @include font-size(38px);
+    line-height: 45px;
+  }
+  @include media(desktop-s) {
+    margin-top: 160px;
+  }
+}
+
+.schedule-container {
+  display: flex;
+  flex-direction: column;
+  @include media(desktop-s) {
+    flex-direction: row;
+    max-height: 678px;
+  }
+}
+
+.schedule-container__info {
+  display: flex;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  width: 100vw;
+  background-color: $color-secundario;
+  @include media(desktop-s) {
+    align-items: center;
+  }
+}
+
+.schedule-info {
+  display: flex;
+  flex-direction: column;
+  width: 88%;
+  /* max-width: 1340px; */
+  max-width: 586px;
+  margin-top: 80px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  &__text--title {
+    display: block;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: $color-primario;
+    @include font-size(18px);
+  }
+  &__text--relevant {
+    display: block;
+    max-width: 486px;
+    font-family: $Fuente2;
+    margin-top: 5px;
+    margin-bottom: 12px;
+    color: #fff;
+    @include font-size(22px);
+    line-height: 30px;
+    @include media(mobile-l) {
+      @include font-size(26px);
+      line-height: 32px;
+    }
+    @include media(tablet) {
+      @include font-size(32px);
+      line-height: 40px;
+    }
+    @include media(desktop-s) {
+      @include font-size(38px);
+      line-height: 45px;
+    }
+  }
+  &__text--description {
+    display: block;
+    margin-bottom: 25px;
+    color: #fff;
+    @include font-size(20px);
+  }
+}
+
+.schedule-image {
+  width: 100%;
+  min-height: 294px;
+  height: 84vw;
+  max-height: 678px;
+  background-image: url('../../assets/img/toothbrush-large.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
