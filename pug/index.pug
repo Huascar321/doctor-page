@@ -1,14 +1,14 @@
 extend components/plantilla.pug
 block contenidos
   main(id="main") 
-    +main-cover('DRA. PAOLA TERRAZAS','Tu profesional favorita en Estética dental','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum eget vel, nunc nulla feugiat. Metus ut ultricies faucibus.','RESERVA TU CITA')
+    +main-cover('DRA. PAOLA TERRAZAS','Tu profesional favorita en Estética dental','Habilidosa, lista y carismática. La doctora Paola Terrazas es una profesional con muchos años de experiencia en el área odontológica.','RESERVA TU CITA')
     section(id="skills")
       .skills-container
-        +skill-card('Experta','Lorem ipsum dolor sit amet, consectetur adipiscing elit aliquet in','like-icon.svg')
-        +skill-card('Especialista','Lorem ipsum dolor sit amet, consectetur adipiscing elit aliquet in','heart-icon.svg')
-        +skill-card('Preparada','Lorem ipsum dolor sit amet, consectetur adipiscing elit aliquet in','star-icon.svg')
+        +skill-card('Experta','Muy hábil y con años de experiencia, totalmente diestra en la odontología.','like-icon.svg')
+        +skill-card('Especialista','Conocedora y especialista en el área, tu sonrisa está en buenas manos.','heart-icon.svg')
+        +skill-card('Preparada','Siempre lista para tu sonrisa, encantada de atender con atención y cortesía.','star-icon.svg')
     section(id="about")
-      +about('SOBRE MÍ','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin nibh cursus at sed sagittis amet, sed. Tristique id nibh lobortis nunc elementum. Tellus quam mauris aenean turpis vulputate sodales nullam lobortis. Vulputate tortor tincidun.')
+      +about('SOBRE MÍ', 'Obteniendo la mejor versión de las personas', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin nibh cursus at sed sagittis amet, sed. Tristique id nibh lobortis nunc elementum. Tellus quam mauris aenean turpis vulputate sodales nullam lobortis. Vulputate tortor tincidun.')
     section(id="services")
       .services
         span.services__title--one SERVICIOS  
@@ -19,7 +19,7 @@ block contenidos
           +carousel('Eliminación de caries','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique libero viverra ultricies commodo.','tooth-cavities.svg','modal2')
           +carousel('Blanqueamiento','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique libero viverra ultricies commodo.','tooth-white.svg','modal3')
           +carousel('Armonización Facial','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique libero viverra ultricies commodo.','facial-harmonization.svg','modal4')
-          +carousel('Otra cosa','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique libero viverra ultricies commodo.','facial-harmonization.svg','modal4')
+          +carousel('Brackets','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique libero viverra ultricies commodo.','brackets.png','modal4')
         .swiper-pagination
         .swiper-button-prev
         .swiper-button-next

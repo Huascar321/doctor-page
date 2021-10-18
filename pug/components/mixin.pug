@@ -20,13 +20,16 @@ mixin skill-card(title,description,icon)
       p.skill-info__title=title 
       p.skill-info__description=description
 
-mixin about(title,text)
+mixin about(title,description,text)
   .about
     .about__info
       .about__info-title
         span=title
+      .about__info-description
+        span=description
       .about__info-text
         p=text
+      +button("RESERVA TU CITA")
     .doctor-cover 
       .doctor-cover__rectangle 
       .doctor-cover__photo 

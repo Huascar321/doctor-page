@@ -57,7 +57,7 @@
   }
   .skill-info__description {
     margin-top: 5px;
-    color: #5d6174;
+    color: $color-letra;
     @include font-size(15px);
   }
 }
@@ -70,7 +70,7 @@
     width: 88%;
     align-self: center;
     text-align: center;
-    color: get-opacity(#5d6174,0.8);
+    color: $color-letra;
     @include font-size(18px);
   }
   &__person {
