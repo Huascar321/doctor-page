@@ -31,12 +31,9 @@
   display: flex;
   flex-direction: column;
   width: 88%;
-  /* max-width: 1340px; */
   max-width: 586px;
   margin-top: 80px;
   margin-bottom: 30px;
-  /* margin-left: auto;
-  margin-right: auto; */
   align-items: start;
   &__text--title {
     display: block;
@@ -48,12 +45,12 @@
   &__text--relevant {
     display: block;
     max-width: 486px;
-    font-family: $Fuente2;
     margin-top: 5px;
     margin-bottom: 12px;
-    color: #fff;
     @include font-size(22px);
     line-height: 30px;
+    font-family: $Fuente2;
+    color: #fff;
     @include media(mobile-l) {
       @include font-size(26px);
       line-height: 32px;
@@ -70,8 +67,8 @@
   &__text--description {
     display: block;
     margin-bottom: 25px;
-    color: get-opacity(#fff, 0.8);
     @include font-size(18px);
+    color: get-opacity(#fff, 0.8);
   }
 }
 

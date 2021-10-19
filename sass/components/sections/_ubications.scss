@@ -8,8 +8,8 @@
     margin: 8px;
     align-self: center;
     letter-spacing: 2px;
-    color: #fff;
     @include font-size(20px);
+    color: #fff;
     @include media(tablet) {
       @include font-size(24px)
     }

@@ -8,14 +8,14 @@
   background-color: #fff;
   &__info {
     width: 88%;
-    margin: 0 auto;
     max-width: 572px;
+    margin: 0 auto;
     &-title {
-      color: $color-primario;
+      margin-bottom: 10px;
       letter-spacing: 2px;
       font-weight: 700;
-      margin-bottom: 10px;
       @include font-size(16px);
+      color: $color-primario;
     }
     &-description span {
       max-width: 486px;
@@ -44,10 +44,10 @@
       justify-self: center;
     }
     @include media(desktop-s) {
+      max-width: 400px;
       order: 2;
       margin: 0;
       margin-left: 75px;
-      max-width: 400px;
     }
     @include media(desktop-m) {
       max-width: 486px;
@@ -55,21 +55,20 @@
     }
   }
   @include media(tablet) {
-    text-align: center;
     justify-content: center;
+    text-align: center;
   }
   @include media(desktop-s) {
-    text-align: start;
-    align-items: center;
     padding-top: 160px;
     padding-bottom: 160px;
+    text-align: start;
+    align-items: center;
   }
 }
 
 .doctor-cover {
   width: 95%;
   max-width: 586px;
-  /* height: 340px; */
   height: 107vw;
   max-height: 648px;
   margin-top: 45px;
@@ -92,11 +91,9 @@
     background-size: cover;
   }
   @include media(desktop-s) {
-    order: 1;
-    /* max-width: 470px;
-    max-height: 530px; */
     max-width: 547px;
     max-height: 605px;
+    order: 1;
   }
   @include media(desktop-m) {
     max-width: 586px;

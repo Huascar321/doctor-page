@@ -1,22 +1,20 @@
-.posts {
+.titles {
   display: flex;
   flex-direction: column;
   width: 88%;
   max-width: 1340px;
+  margin: 43px auto;
   margin-top: 80px;
-  margin-left: auto;
-  margin-right: auto;
-  &__title--one {
+  &__principal {
     letter-spacing: 2px;
     font-weight: 600;
     color: $color-primario;
     @include font-size(18px);
   }
-  &__title--two {
+  &__description {
     max-width: 486px;
-    font-family: $Fuente2;
     margin-top: 5px;
-    margin-bottom: 70px;
+    font-family: $Fuente2;
     @include font-size(38px);
     line-height: 45px;
   }

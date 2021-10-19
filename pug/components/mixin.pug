@@ -34,12 +34,26 @@ mixin about(title,description,text)
       .doctor-cover__rectangle 
       .doctor-cover__photo 
 
-mixin video()
-  .light 
-    a(class="boxclose" id="boxclose" onclick="lightbox_close();")
-    video(id="doctor-video" width="600" controls)
-      source(src="../../assets/videos/doctor-video.mp4")
-  div(id="fade" onclick="lightbox_close();")
+mixin carousel(title,description,icon,id)
+  .carousel
+    .carousel-icon
+      img(src="../../assets/icons/carrousel/"+icon, alt="Icono")
+    .carousel-info
+      span.carousel-info__title=title
+      span.carousel-info__description=description
+      a(data-bs-toggle="modal" data-bs-target="#"+id) MÁS INFORMACIÓN
+
+mixin schedule(title,description,text)
+  .schedule-container
+    .schedule-container__info--two
+      .schedule-container__info
+        .schedule-info
+          .schedule-info__text
+            span.schedule-info__text--title=title
+            span.schedule-info__text--relevant=description
+            span.schedule-info__text--description=text
+          +button("RESERVA TU CITA")
+    .schedule-image
 
 mixin testimony-card(name,occupation,photo,text)
   .testimony-card
@@ -50,6 +64,13 @@ mixin testimony-card(name,occupation,photo,text)
         span=name
         p=occupation
     hr
+
+mixin video(link)
+  .video-container
+    .video
+      .video-opacity
+      a(class="video-icon" href=link target="_blank")
+        img(src="../assets/icons/play.svg", alt="Es un icono de play")
 
 mixin social-media(tiktok_link,instagram_link,facebook_link)
   .social-media
@@ -64,15 +85,15 @@ mixin footer-info(copyright,developer_sign,email)
     span.footer-info__developer-sign=developer_sign
     span.footer-info__email=email
 
-mixin carousel(title,description,icon,id)
-  .carousel
-    .carousel-icon
-      img(src="../../assets/icons/carrousel/"+icon, alt="Icono")
-    .carousel-info
-      span.carousel-info__title=title
-      span.carousel-info__description=description
-      a(data-bs-toggle="modal" data-bs-target="#"+id) MÁS INFORMACIÓN
-  
+mixin title(principal,description)
+  .titles 
+    .titles__principal=principal
+    .titles__description=description 
+
+mixin button(text)
+  button(class="default-button" data-bs-toggle="modal" data-bs-target="#modal-schedule")
+    .default=text
+
 mixin modal(title,id,text,link)
   div(class="modal" id=id tabindex="-1" aria-labelledby="label_"+id aria-hidden="true")
     div(class="modal-dialog modal-dialog-centered")
@@ -121,7 +142,3 @@ mixin modal-schedule(title,id,link)
                 td CERRADO
         div(class="modal-footer")
           a(href=link target="_blank" class="btn btn-primary") Reservar cita
-
-mixin button(text)
-  button(class="default-button" data-bs-toggle="modal" data-bs-target="#modal-schedule")
-    .default=text
