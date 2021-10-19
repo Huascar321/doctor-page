@@ -65,12 +65,12 @@ mixin footer-info(copyright,developer_sign,email)
     span.footer-info__email=email
 
 mixin carousel(title,description,icon,id)
-  .swiper-slide
-    .swiper-slide-icon
+  .carousel
+    .carousel-icon
       img(src="../../assets/icons/carrousel/"+icon, alt="Icono")
-    .swiper-slide-info
-      span.swiper-slide-info__title=title
-      span.swiper-slide-info__description=description
+    .carousel-info
+      span.carousel-info__title=title
+      span.carousel-info__description=description
       a(data-bs-toggle="modal" data-bs-target="#"+id) MÁS INFORMACIÓN
   
 mixin modal(title,id,text,link)
@@ -85,6 +85,43 @@ mixin modal(title,id,text,link)
         div(class="modal-footer")
           a(href=link target="_blank" class="btn btn-primary") Reservar cita
 
+mixin modal-schedule(title,id,link)
+  div(class="modal" id=id tabindex="-1" aria-labelledby="label_"+id aria-hidden="true")
+    div(class="modal-dialog modal-dialog-centered")
+      div(class="modal-content")
+        div(class="modal-header")
+          h5(class="modal-title" id="label_"+id)=title
+          button(type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close")
+        div(class="modal-body")
+          table(class="table table-bordered")
+            thead
+              th(scope="col") Día
+              th(scope="col") Hora
+            tbody
+              tr
+                td Lunes
+                td 8:30AM - 19:30PM
+              tr 
+                td Martes
+                td 8:30AM - 19:30PM
+              tr 
+                td Miercoles
+                td 8:30AM - 19:30PM
+              tr
+                td Jueves
+                td 8:30AM - 19:30PM
+              tr 
+                td Viernes
+                td 8:30AM - 19:30PM
+              tr
+                td Sábado
+                td CERRADO
+              tr
+                td Domingo
+                td CERRADO
+        div(class="modal-footer")
+          a(href=link target="_blank" class="btn btn-primary") Reservar cita
+
 mixin button(text)
-  button(class="default-button")
+  button(class="default-button" data-bs-toggle="modal" data-bs-target="#modal-schedule")
     .default=text

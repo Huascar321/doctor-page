@@ -13,7 +13,8 @@
           transform: scale(var(--s, 0.97));
   box-shadow: 0 var(--s-y, 4px) var(--s-b, 12px) rgba(0, 9, 61, 0.16);
   color: #fff;
-  background: #2a5daa;
+  /* background: #2a5daa; */
+  background: $color-primario;
   transition: box-shadow .3s, -webkit-transform .3s;
   transition: transform .3s, box-shadow .3s;
   transition: transform .3s, box-shadow .3s, -webkit-transform .3s;
