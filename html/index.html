@@ -42,7 +42,7 @@
                 <h1 class="title__doctor">DRA. PAOLA TERRAZAS</h1>
                 <p class="title__text--one">Tu profesional favorita en Estética dental</p>
                 <p class="title__text--two">Habilidosa, lista y carismática. La doctora Paola Terrazas es una profesional con muchos años de experiencia en el área odontológica.</p>
-                  <button class="default-button">
+                  <button class="default-button" data-bs-toggle="modal" data-bs-target="#modal-schedule">
                     <div class="default">RESERVA TU CITA</div>
                   </button>
               </div>
@@ -86,7 +86,7 @@
               <div class="about__info-text">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin nibh cursus at sed sagittis amet, sed. Tristique id nibh lobortis nunc elementum. Tellus quam mauris aenean turpis vulputate sodales nullam lobortis. Vulputate tortor tincidun.</p>
               </div>
-                <button class="default-button">
+                <button class="default-button" data-bs-toggle="modal" data-bs-target="#modal-schedule">
                   <div class="default">RESERVA TU CITA</div>
                 </button>
             </div>
@@ -181,6 +181,55 @@
               </div>
             </div>
           </div>
+          <div class="modal" id="modal-schedule" tabindex="-1" aria-labelledby="label_modal-schedule" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="label_modal-schedule">Horarios</h5>
+                  <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="close"></button>
+                </div>
+                <div class="modal-body">
+                  <table class="table table-bordered">
+                    <thead>
+                      <th scope="col">Día</th>
+                      <th scope="col">Hora</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Lunes</td>
+                        <td>8:30AM - 19:30PM</td>
+                      </tr>
+                      <tr> 
+                        <td>Martes</td>
+                        <td>8:30AM - 19:30PM</td>
+                      </tr>
+                      <tr> 
+                        <td>Miercoles</td>
+                        <td>8:30AM - 19:30PM</td>
+                      </tr>
+                      <tr>
+                        <td>Jueves</td>
+                        <td>8:30AM - 19:30PM</td>
+                      </tr>
+                      <tr> 
+                        <td>Viernes</td>
+                        <td>8:30AM - 19:30PM</td>
+                      </tr>
+                      <tr>
+                        <td>Sábado</td>
+                        <td>CERRADO</td>
+                      </tr>
+                      <tr>
+                        <td>Domingo</td>
+                        <td>CERRADO</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="modal-footer"><a class="btn btn-primary" href="https://cutt.ly/PEEAW8L" target="_blank">Reservar cita</a></div>
+              </div>
+            </div>
+          </div>
       </section>
       <section id="Schedule">
         <div class="schedule-container">
@@ -188,7 +237,7 @@
             <div class="schedule-container__info">
               <div class="schedule-info">
                 <div class="schedule-info__text"><span class="schedule-info__text--title">RESERVA TU CITA</span><span class="schedule-info__text--relevant">Envianos un mensaje o mira los horarios disponibles</span><span class="schedule-info__text--description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin nibh cursus at sed sagittis amet, sed.</span></div>
-                  <button class="default-button">
+                  <button class="default-button" data-bs-toggle="modal" data-bs-target="#modal-schedule">
                     <div class="default">RESERVA TU CITA</div>
                   </button>
               </div>

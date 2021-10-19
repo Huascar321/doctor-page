@@ -85,6 +85,43 @@ mixin modal(title,id,text,link)
         div(class="modal-footer")
           a(href=link target="_blank" class="btn btn-primary") Reservar cita
 
+mixin modal-schedule(title,id,link)
+  div(class="modal" id=id tabindex="-1" aria-labelledby="label_"+id aria-hidden="true")
+    div(class="modal-dialog modal-dialog-centered")
+      div(class="modal-content")
+        div(class="modal-header")
+          h5(class="modal-title" id="label_"+id)=title
+          button(type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close")
+        div(class="modal-body")
+          table(class="table table-bordered")
+            thead
+              th(scope="col") Día
+              th(scope="col") Hora
+            tbody
+              tr
+                td Lunes
+                td 8:30AM - 19:30PM
+              tr 
+                td Martes
+                td 8:30AM - 19:30PM
+              tr 
+                td Miercoles
+                td 8:30AM - 19:30PM
+              tr
+                td Jueves
+                td 8:30AM - 19:30PM
+              tr 
+                td Viernes
+                td 8:30AM - 19:30PM
+              tr
+                td Sábado
+                td CERRADO
+              tr
+                td Domingo
+                td CERRADO
+        div(class="modal-footer")
+          a(href=link target="_blank" class="btn btn-primary") Reservar cita
+
 mixin button(text)
-  button(class="default-button")
+  button(class="default-button" data-bs-toggle="modal" data-bs-target="#modal-schedule")
     .default=text

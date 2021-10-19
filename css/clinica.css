@@ -494,7 +494,7 @@ nav {
   width: 100%;
   background: #023E8A;
   color: #000;
-  opacity: 0.85;
+  /* opacity: 0.85; */
   z-index: 100;
 }
 @media only screen and (max-width: 768px) {
@@ -567,7 +567,7 @@ nav a:hover {
 
 @media (max-width: 768px) {
   nav {
-    opacity: 0.95;
+    /* opacity: 0.95; */
   }
 
   .navbar-container input[type=checkbox],
@@ -1932,28 +1932,34 @@ footer .social-media {
   height: 40px;
 }
 footer .social-media__tiktok {
-  width: 28px;
-  height: 23px;
+  width: 29px;
+  height: 26px;
   margin: 15px;
-  background-image: url("../../assets/icons/social_networks/white/tiktok-icon.svg");
+  background-image: url("../../assets/icons/social_networks/tiktok.png");
   background-size: contain;
   background-repeat: no-repeat;
+  -webkit-filter: invert(1);
+  filter: invert(1);
 }
 footer .social-media__instagram {
   width: 29px;
   height: 26px;
   margin: 15px;
-  background-image: url("../../assets/icons/social_networks/white/instagram-icon.svg");
+  background-image: url("../../assets/icons/social_networks/instagram.png");
   background-size: contain;
   background-repeat: no-repeat;
+  -webkit-filter: invert(1);
+  filter: invert(1);
 }
 footer .social-media__facebook {
   width: 29px;
-  height: 24px;
+  height: 26px;
   margin: 15px;
-  background-image: url("../../assets/icons/social_networks/white/facebook-icon.svg");
+  background-image: url("../../assets/icons/social_networks/facebook.png");
   background-size: contain;
   background-repeat: no-repeat;
+  -webkit-filter: invert(1);
+  filter: invert(1);
 }
 footer .footer-info {
   display: -webkit-box;
@@ -2033,7 +2039,8 @@ footer .footer-info__email {
   -webkit-box-shadow: 0 var(--s-y, 4px) var(--s-b, 12px) rgba(0, 9, 61, 0.16);
           box-shadow: 0 var(--s-y, 4px) var(--s-b, 12px) rgba(0, 9, 61, 0.16);
   color: #fff;
-  background: #2a5daa;
+  /* background: #2a5daa; */
+  background: #023E8A;
   transition: box-shadow 0.3s, -webkit-transform 0.3s;
   -webkit-transition: -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
   transition: -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
