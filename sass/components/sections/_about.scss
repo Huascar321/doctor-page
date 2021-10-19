@@ -1,0 +1,111 @@
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  margin-top: 90px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #fff;
+  &__info {
+    width: 88%;
+    margin: 0 auto;
+    max-width: 572px;
+    &-title {
+      color: $color-primario;
+      letter-spacing: 2px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      @include font-size(16px);
+    }
+    &-description span {
+      max-width: 486px;
+      font-family: $Fuente2;
+      @include font-size(22px);
+      line-height: 23px;
+      @include media(mobile-l) {
+        @include font-size(26px);
+        line-height: 27px;
+      }
+      @include media(tablet) {
+        @include font-size(32px);
+        line-height: 33px;
+      }
+      @include media(desktop-s) {
+        @include font-size(38px);
+        line-height: 45px;
+      }
+    }
+    &-text {
+      margin-top: 10px;
+      color: $color-letra;
+      @include font-size(18px);
+    }
+    @include media(tablet) {
+      justify-self: center;
+    }
+    @include media(desktop-s) {
+      order: 2;
+      margin: 0;
+      margin-left: 75px;
+      max-width: 400px;
+    }
+    @include media(desktop-m) {
+      max-width: 486px;
+      margin-left: 0;
+    }
+  }
+  @include media(tablet) {
+    text-align: center;
+    justify-content: center;
+  }
+  @include media(desktop-s) {
+    text-align: start;
+    align-items: center;
+    padding-top: 160px;
+    padding-bottom: 160px;
+  }
+}
+
+.doctor-cover {
+  width: 95%;
+  max-width: 586px;
+  /* height: 340px; */
+  height: 107vw;
+  max-height: 648px;
+  margin-top: 45px;
+  position: relative;
+  background-color: #fff;
+  &__rectangle {
+    width: 78%;
+    height: 85%;
+    position: absolute;
+    background-color: $color-secundario;
+  }
+  &__photo {
+    width: 94%;
+    height: 93%;
+    position: absolute;
+    top: 7%;
+    left: 6%;
+    background-image: url("../../assets/img/clinica-4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  @include media(desktop-s) {
+    order: 1;
+    /* max-width: 470px;
+    max-height: 530px; */
+    max-width: 547px;
+    max-height: 605px;
+  }
+  @include media(desktop-m) {
+    max-width: 586px;
+    max-height: 648px;
+    margin-right: 75px;
+  }
+  @include media(desktop-l) {
+    max-width: 686px;
+    max-height: 748px;
+    margin-right: 75px;
+  }
+}

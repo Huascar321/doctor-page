@@ -1,64 +1,39 @@
-.card {
-  padding: 20px;
-  /* padding-left: 20px; */
-  @include card;
-  &__icon {
-    display: flex;
-    width: 60px;
-    height: 60px;
-    margin-bottom: 15px;
-    /* width: 59.09px;
-    height: 56.5px; */
-    border-radius: 50%;
-    justify-content: center;
-    background-color: $color-secundario;
-    & img {
-      width: 60%;
-      -webkit-filter: invert(1);
-      filter: invert(1);
-    }
-    @include media('mobile-l') {
-      margin-right: 15px;
-    }
+.testimony {
+  display: flex;
+  flex-direction: column;
+  width: 88%;
+  max-width: 1340px;
+  margin-top: 80px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  &__title--one {
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: $color-primario;
+    @include font-size(18px);
   }
-  @include media('mobile-l') {
-    height: 144px;
-    flex-direction: row;
-    align-items: center;
+  &__title--two {
+    max-width: 486px;
+    font-family: $Fuente2;
+    margin-top: 5px;
+    @include font-size(38px);
+    line-height: 45px;
   }
-  @include media(tablet) {
-    /* width: 229px; */
-    width: 30%;
-    height: auto;
-    min-width: 227px;
-    min-height: 288px;
-    max-width: 430px;
-    max-height: 166px;
-    flex-direction: column;
-    align-items: start;
-    margin-left: 15px;
-    margin-right: 15px;
-  }
-  @include media(desktop-m) {
-    align-items: center;
-    flex-direction: row;
-    min-height: 166px;
+  @include media(desktop-s) {
+    margin-top: 160px;
   }
 }
 
-.skill-info {
-  width: 90%;
-  .skill-info__title {
-    margin: 0;
-    font-family: $Fuente2;
-    font-weight: 400;
-    letter-spacing: 1.5px;
-    @include font-size(26px);
-  }
-  .skill-info__description {
-    margin-top: 5px;
-    color: $color-letra;
-    @include font-size(15px);
+.testimonials-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 80px;
+  @include media(desktop-s) {
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 160px;
   }
 }
 

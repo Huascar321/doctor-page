@@ -52,3 +52,7 @@ body {
   background-color: $color-fondo;
   @include font-size(18px);
 }
+
+.embed-responsive-item {
+  width: 100%;
+}

@@ -1,0 +1,32 @@
+.ubication {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  background-color: $color-primario;
+  & span {
+    margin: 8px;
+    align-self: center;
+    letter-spacing: 2px;
+    color: #fff;
+    @include font-size(20px);
+    @include media(tablet) {
+      @include font-size(24px)
+    }
+    @include media(desktop-s) {
+      @include font-size(28px)
+    }
+  }
+  &__maps {
+    height: 0;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+    & iframe {
+      left: 0;
+      top: 0;
+      height: 100%;
+      max-height: 505px;
+      width: 100%;
+    }
+  }
+}
