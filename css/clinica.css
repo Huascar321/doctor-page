@@ -845,9 +845,19 @@ nav a:hover {
   position: absolute;
   top: 7%;
   left: 6%;
-  background-image: url("../../assets/img/clinica-4.jpg");
+  background-image: url("../../../assets/img/clinica-4-small.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media only screen and (min-width: 768px) {
+  .doctor-cover__photo {
+    background-image: url("../../../assets/img/clinica-4-medium.jpg");
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .doctor-cover__photo {
+    background-image: url("../../../assets/img/clinica-4-large.jpg");
+  }
 }
 @media only screen and (min-width: 1024px) {
   .doctor-cover {
@@ -1047,6 +1057,18 @@ nav a:hover {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+.schedule-container picture {
+  width: 100%;
+  min-height: 294px;
+  height: 84vw;
+  max-height: 678px;
+}
+.schedule-container picture img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 @media only screen and (min-width: 1024px) {
   .schedule-container {
     -webkit-box-orient: horizontal;
@@ -1159,16 +1181,6 @@ nav a:hover {
   font-size: 1.125rem;
   line-height: 1.6875rem;
   color: rgba(255, 255, 255, 0.8);
-}
-
-.schedule-image {
-  width: 100%;
-  min-height: 294px;
-  height: 84vw;
-  max-height: 678px;
-  background-image: url("../../assets/img/toothbrush-large.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .swiper {
@@ -1660,9 +1672,17 @@ nav a:hover {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  background-image: url("../../assets/img/clinica-5.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+}
+.video picture {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.video picture img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .video-opacity {
   width: 100%;

@@ -9,7 +9,10 @@ mixin main-cover(name,text,text2,text_button)
           +button(text_button)
         div(class="split-content home-right")
           div(class="image-wrapper home-hero")
-            img(src="../../assets/img/clinica-1.jpg", alt="Imagen de la doctora")
+            picture
+              source(media="(min-width:1300px)" srcset="../../assets/img/clinica-1-large.jpg")
+              source(media="(min-width:768px)" srcset="../../assets/img/clinica-1-medium.jpg")
+              img(src="../../assets/img/clinica-1-small.jpg", alt="Imagen de la doctora")
     div(class="bg home-hero")
 
 mixin skill-card(title,description,icon)
@@ -41,7 +44,7 @@ mixin carousel(title,description,icon,id)
     .carousel-info
       span.carousel-info__title=title
       span.carousel-info__description=description
-      a(data-bs-toggle="modal" data-bs-target="#"+id) MÁS INFORMACIÓN
+      a(href="#" data-bs-toggle="modal" data-bs-target="#"+id) MÁS INFORMACIÓN
 
 mixin schedule(title,description,text)
   .schedule-container
@@ -53,7 +56,10 @@ mixin schedule(title,description,text)
             span.schedule-info__text--relevant=description
             span.schedule-info__text--description=text
           +button("RESERVA TU CITA")
-    .schedule-image
+    picture
+      source(media="(min-width:1300px)" srcset="../../assets/img/toothbrush-large.jpg")
+      source(media="(min-width:768px)" srcset="../../assets/img/toothbrush-medium.jpg")
+      img(src="../../assets/img/toothbrush-small.jpg", alt="Es una imagen de un cepillo de dientes")
 
 mixin testimony-card(name,occupation,photo,text)
   .testimony-card
@@ -68,15 +74,19 @@ mixin testimony-card(name,occupation,photo,text)
 mixin video(link)
   .video-container
     .video
+      picture 
+        source(media="(min-width:1300px)" srcset="../../assets/img/clinica-5-large.jpg")
+        source(media="(min-width:768px)" srcset="../../assets/img/clinica-5-medium.jpg")
+        img(src="../../assets/img/clinica-5-small.jpg", alt="Es una miniatura de video")
       .video-opacity
-      a(class="video-icon" href=link target="_blank")
+      a(class="video-icon" href=link target="_blank" rel="noopener")
         img(src="../assets/icons/play.svg", alt="Es un icono de play")
 
 mixin social-media(tiktok_link,instagram_link,facebook_link)
   .social-media
-    a(href=tiktok_link target="_blank" class="social-media__tiktok")
-    a(href=instagram_link target="_blank" class="social-media__instagram")
-    a(href=facebook_link target="_blank" class="social-media__facebook")
+    a(href=tiktok_link target="_blank" class="social-media__tiktok" rel="noopener")
+    a(href=instagram_link target="_blank" class="social-media__instagram" rel="noopener")
+    a(href=facebook_link target="_blank" class="social-media__facebook" rel="noopener")
 
 mixin footer-info(copyright,developer_sign,email)
   .footer-info
@@ -104,7 +114,7 @@ mixin modal(title,id,text,link)
         div(class="modal-body")
           p=text
         div(class="modal-footer")
-          a(href=link target="_blank" class="btn btn-primary") Reservar cita
+          a(href=link target="_blank" class="btn btn-primary" rel="noopener") Reservar cita
 
 mixin modal-schedule(title,id,link)
   div(class="modal animate__animated animate__zoomIn animate__faster" id=id tabindex="-1" aria-labelledby="label_"+id aria-hidden="true")
@@ -141,4 +151,4 @@ mixin modal-schedule(title,id,link)
                 td Domingo
                 td CERRADO
         div(class="modal-footer")
-          a(href=link target="_blank" class="btn btn-primary") Reservar cita
+          a(href=link target="_blank" class="btn btn-primary" rel="noopener") Reservar cita

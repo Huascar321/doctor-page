@@ -49,7 +49,12 @@
                   </button>
               </div>
               <div class="split-content home-right">
-                <div class="image-wrapper home-hero"><img src="../../assets/img/clinica-1.jpg" alt="Imagen de la doctora"></div>
+                <div class="image-wrapper home-hero">
+                  <picture>
+                    <source media="(min-width:1300px)" srcset="../../assets/img/clinica-1-large.jpg">
+                    <source media="(min-width:768px)" srcset="../../assets/img/clinica-1-medium.jpg"><img src="../../assets/img/clinica-1-small.jpg" alt="Imagen de la doctora">
+                  </picture>
+                </div>
               </div>
             </div>
           </div>
@@ -109,31 +114,31 @@
           <div class="swiper-slide">
               <div class="carousel">
                 <div class="carousel-icon"><img src="../../assets/icons/carrousel/tooth-clean.svg" alt="Icono"></div>
-                <div class="carousel-info"><span class="carousel-info__title">Limpieza general</span><span class="carousel-info__description">La limpieza dental se hace para eliminar la placa y el sarro que se acumula durante el paso del tiempo.</span><a data-bs-toggle="modal" data-bs-target="#modal1">MÁS INFORMACIÓN</a></div>
+                <div class="carousel-info"><span class="carousel-info__title">Limpieza general</span><span class="carousel-info__description">La limpieza dental se hace para eliminar la placa y el sarro que se acumula durante el paso del tiempo.</span><a href="#" data-bs-toggle="modal" data-bs-target="#modal1">MÁS INFORMACIÓN</a></div>
               </div>
           </div>
           <div class="swiper-slide">
               <div class="carousel">
                 <div class="carousel-icon"><img src="../../assets/icons/carrousel/tooth-cavities.svg" alt="Icono"></div>
-                <div class="carousel-info"><span class="carousel-info__title">Eliminación de caries</span><span class="carousel-info__description">Las caries son zonas dañadas de forma permanente en la superficie de los dientes que provocan molestias.</span><a data-bs-toggle="modal" data-bs-target="#modal2">MÁS INFORMACIÓN</a></div>
+                <div class="carousel-info"><span class="carousel-info__title">Eliminación de caries</span><span class="carousel-info__description">Las caries son zonas dañadas de forma permanente en la superficie de los dientes que provocan molestias.</span><a href="#" data-bs-toggle="modal" data-bs-target="#modal2">MÁS INFORMACIÓN</a></div>
               </div>
           </div>
           <div class="swiper-slide">
               <div class="carousel">
                 <div class="carousel-icon"><img src="../../assets/icons/carrousel/tooth-white.svg" alt="Icono"></div>
-                <div class="carousel-info"><span class="carousel-info__title">Blanqueamiento</span><span class="carousel-info__description">El blanqueamiento es un tratamiento estético que busca eliminar manchas dentales y blanquear los dientes.</span><a data-bs-toggle="modal" data-bs-target="#modal3">MÁS INFORMACIÓN</a></div>
+                <div class="carousel-info"><span class="carousel-info__title">Blanqueamiento</span><span class="carousel-info__description">El blanqueamiento es un tratamiento estético que busca eliminar manchas dentales y blanquear los dientes.</span><a href="#" data-bs-toggle="modal" data-bs-target="#modal3">MÁS INFORMACIÓN</a></div>
               </div>
           </div>
           <div class="swiper-slide">
               <div class="carousel">
                 <div class="carousel-icon"><img src="../../assets/icons/carrousel/facial-harmonization.svg" alt="Icono"></div>
-                <div class="carousel-info"><span class="carousel-info__title">Armonización Facial</span><span class="carousel-info__description">La armonización ayuda a mejorar la simetría del rostro, tratando el envejecimiento y revitalizando el rostro.</span><a data-bs-toggle="modal" data-bs-target="#modal4">MÁS INFORMACIÓN</a></div>
+                <div class="carousel-info"><span class="carousel-info__title">Armonización Facial</span><span class="carousel-info__description">La armonización ayuda a mejorar la simetría del rostro, tratando el envejecimiento y revitalizando el rostro.</span><a href="#" data-bs-toggle="modal" data-bs-target="#modal4">MÁS INFORMACIÓN</a></div>
               </div>
           </div>
           <div class="swiper-slide">
               <div class="carousel">
                 <div class="carousel-icon"><img src="../../assets/icons/carrousel/brackets.png" alt="Icono"></div>
-                <div class="carousel-info"><span class="carousel-info__title">Brackets</span><span class="carousel-info__description">Los brackets se utilizan mucho para corregir la &quot;mordedura deficiente&quot; u oclusión dental defectuosa.</span><a data-bs-toggle="modal" data-bs-target="#modal4">MÁS INFORMACIÓN</a></div>
+                <div class="carousel-info"><span class="carousel-info__title">Brackets</span><span class="carousel-info__description">Los brackets se utilizan mucho para corregir la &quot;mordedura deficiente&quot; u oclusión dental defectuosa.</span><a href="#" data-bs-toggle="modal" data-bs-target="#modal4">MÁS INFORMACIÓN</a></div>
               </div>
           </div>
         </div>
@@ -154,7 +159,10 @@
               </div>
             </div>
           </div>
-          <div class="schedule-image"></div>
+          <picture>
+            <source media="(min-width:1300px)" srcset="../../assets/img/toothbrush-large.jpg">
+            <source media="(min-width:768px)" srcset="../../assets/img/toothbrush-medium.jpg"><img src="../../assets/img/toothbrush-small.jpg" alt="Es una imagen de un cepillo de dientes">
+          </picture>
         </div>
     </section>
     <section id="testimonials">
@@ -195,7 +203,11 @@
     <section id="video">
         <div class="video-container">
           <div class="video">
-            <div class="video-opacity"></div><a class="video-icon" href="https://fb.watch/8ahMRwkmYn/" target="_blank"><img src="../assets/icons/play.svg" alt="Es un icono de play"></a>
+            <picture> 
+              <source media="(min-width:1300px)" srcset="../../assets/img/clinica-5-large.jpg">
+              <source media="(min-width:768px)" srcset="../../assets/img/clinica-5-medium.jpg"><img src="../../assets/img/clinica-5-small.jpg" alt="Es una miniatura de video">
+            </picture>
+            <div class="video-opacity"></div><a class="video-icon" href="https://fb.watch/8ahMRwkmYn/" target="_blank" rel="noopener"><img src="../assets/icons/play.svg" alt="Es un icono de play"></a>
           </div>
         </div>
     </section>
@@ -206,13 +218,48 @@
         </div>
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
-          <div class="swiper-slide"><img class="carousel__gallery" src="../assets/img/gallery/vertical/dr1.jpg" alt=""></div>
-          <div class="swiper-slide"><img class="carousel__gallery" src="../assets/img/gallery/vertical/dr2.jpg" alt=""></div>
-          <div class="swiper-slide"><img class="carousel__gallery" src="../assets/img/gallery/vertical/dr3.jpg" alt=""></div>
-          <div class="swiper-slide"><img class="carousel__gallery" src="../assets/img/gallery/vertical/dr4.jpg" alt=""></div>
-          <div class="swiper-slide"><img class="carousel__gallery" src="../assets/img/gallery/vertical/dr5.jpg" alt=""></div>
-          <div class="swiper-slide"><img class="carousel__gallery" src="../assets/img/gallery/vertical/dr6.jpg" alt=""></div>
-          <div class="swiper-slide"><img class="carousel__gallery" src="../assets/img/gallery/vertical/dr7.jpg" alt=""></div>
+          <div class="swiper-slide">
+            <picture> 
+              <source media="(min-width:1300px)" srcset="./../assets/img/gallery/vertical/dr1-large.jpg">
+              <source media="(min-width:768px)" srcset="./../assets/img/gallery/vertical/dr1-medium.jpg"><img class="carousel__gallery" src="../assets/img/gallery/vertical/dr1-small.jpg" alt="">
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture> 
+              <source media="(min-width:1300px)" srcset="./../assets/img/gallery/vertical/dr2-large.jpg">
+              <source media="(min-width:768px)" srcset="./../assets/img/gallery/vertical/dr2-medium.jpg"><img class="carousel__gallery" src="../assets/img/gallery/vertical/dr2-small.jpg" alt="">
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture> 
+              <source media="(min-width:1300px)" srcset="./../assets/img/gallery/vertical/dr3-large.jpg">
+              <source media="(min-width:768px)" srcset="./../assets/img/gallery/vertical/dr3-medium.jpg"><img class="carousel__gallery" src="../assets/img/gallery/vertical/dr3-small.jpg" alt="">
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture> 
+              <source media="(min-width:1300px)" srcset="./../assets/img/gallery/vertical/dr4-large.jpg">
+              <source media="(min-width:768px)" srcset="./../assets/img/gallery/vertical/dr4-medium.jpg"><img class="carousel__gallery" src="../assets/img/gallery/vertical/dr4-small.jpg" alt="">
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture> 
+              <source media="(min-width:1300px)" srcset="./../assets/img/gallery/vertical/dr5-large.jpg">
+              <source media="(min-width:768px)" srcset="./../assets/img/gallery/vertical/dr5-medium.jpg"><img class="carousel__gallery" src="../assets/img/gallery/vertical/dr5-small.jpg" alt="">
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture> 
+              <source media="(min-width:1300px)" srcset="./../assets/img/gallery/vertical/dr6-large.jpg">
+              <source media="(min-width:768px)" srcset="./../assets/img/gallery/vertical/dr6-medium.jpg"><img class="carousel__gallery" src="../assets/img/gallery/vertical/dr6-small.jpg" alt="">
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture> 
+              <source media="(min-width:1300px)" srcset="./../assets/img/gallery/vertical/dr7-large.jpg">
+              <source media="(min-width:768px)" srcset="./../assets/img/gallery/vertical/dr7-medium.jpg"><img class="carousel__gallery" src="../assets/img/gallery/vertical/dr7-small.jpg" alt="">
+            </picture>
+          </div>
         </div>
         <div class="swiper-pagination"></div>
         <div class="swiper-button-prev"></div>
@@ -234,7 +281,7 @@
               <div class="modal-body">
                 <p>Por muy bien que te cepilles los dientes o uses el hilo dental, siempre quedan zonas difíciles de alcanzar. Una limpieza dental puede ayudarte a tener los dientes realmente limpios!</p>
               </div>
-              <div class="modal-footer"><a class="btn btn-primary" href="https://cutt.ly/kEEAs9Y" target="_blank">Reservar cita</a></div>
+              <div class="modal-footer"><a class="btn btn-primary" href="https://cutt.ly/kEEAs9Y" target="_blank" rel="noopener">Reservar cita</a></div>
             </div>
           </div>
         </div>
@@ -248,7 +295,7 @@
               <div class="modal-body">
                 <p>En nuestra boca, al comer, las bacterias y los restos de comida se acaban juntando en la superficie de los dientes y formando la placa dental. Si ésta no se elimina, acaba atacando el esmalte del diente. Si tienes caries o sientes tenerlas, acude con nosotros lo más pronto posible!</p>
               </div>
-              <div class="modal-footer"><a class="btn btn-primary" href="https://cutt.ly/BEEAxyJ" target="_blank">Reservar cita</a></div>
+              <div class="modal-footer"><a class="btn btn-primary" href="https://cutt.ly/BEEAxyJ" target="_blank" rel="noopener">Reservar cita</a></div>
             </div>
           </div>
         </div>
@@ -262,7 +309,7 @@
               <div class="modal-body">
                 <p>...</p>
               </div>
-              <div class="modal-footer"><a class="btn btn-primary" href="https://cutt.ly/IEEAbz6" target="_blank">Reservar cita</a></div>
+              <div class="modal-footer"><a class="btn btn-primary" href="https://cutt.ly/IEEAbz6" target="_blank" rel="noopener">Reservar cita</a></div>
             </div>
           </div>
         </div>
@@ -276,7 +323,7 @@
               <div class="modal-body">
                 <p>...</p>
               </div>
-              <div class="modal-footer"><a class="btn btn-primary" href="https://cutt.ly/PEEAW8L" target="_blank">Reservar cita</a></div>
+              <div class="modal-footer"><a class="btn btn-primary" href="https://cutt.ly/PEEAW8L" target="_blank" rel="noopener">Reservar cita</a></div>
             </div>
           </div>
         </div>
@@ -325,16 +372,16 @@
                   </tbody>
                 </table>
               </div>
-              <div class="modal-footer"><a class="btn btn-primary" href="https://cutt.ly/PEEAW8L" target="_blank">Reservar cita</a></div>
+              <div class="modal-footer"><a class="btn btn-primary" href="https://cutt.ly/PEEAW8L" target="_blank" rel="noopener">Reservar cita</a></div>
             </div>
           </div>
         </div>
     </div>
     <footer>
-        <div class="social-media"><a class="social-media__tiktok" href="https://www.tiktok.com/@paolaandreaterrazas?" target="_blank"></a><a class="social-media__instagram" href="http://www.instagram.com/dentalcenter.draterrazas" target="_blank"></a><a class="social-media__facebook" href="https://www.facebook.com/dentalcenterterrazas" target="_blank"></a></div>
+        <div class="social-media"><a class="social-media__tiktok" href="https://www.tiktok.com/@paolaandreaterrazas?" target="_blank" rel="noopener"></a><a class="social-media__instagram" href="http://www.instagram.com/dentalcenter.draterrazas" target="_blank" rel="noopener"></a><a class="social-media__facebook" href="https://www.facebook.com/dentalcenterterrazas" target="_blank" rel="noopener"></a></div>
         <div class="footer-info"><span class="footer-info__copyright">Copyright © 2021 • Paola Terrazas</span><span class="footer-info__copyright-bellow">All right reserved</span><span class="footer-info__developer-sign">Desarrollado por Huáscar Suárez</span><span class="footer-info__email">drapaolaterrazas@gmail.com</span></div>
     </footer>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"><a class="float" href="https://api.whatsapp.com/send?phone=59172668229&amp;text=Hola!%20Quisiera%20una%20consulta%20%F0%9F%98%81" target="_blank"><i class="fa fa-whatsapp my-float"></i></a>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"><a class="float" href="https://api.whatsapp.com/send?phone=59172668229&amp;text=Hola!%20Quisiera%20una%20consulta%20%F0%9F%98%81" target="_blank" rel="noopener"><i class="fa fa-whatsapp my-float"></i></a>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"> </script>
     <script src="../../js/script.js"></script>

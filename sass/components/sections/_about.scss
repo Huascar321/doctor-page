@@ -86,9 +86,15 @@
     position: absolute;
     top: 7%;
     left: 6%;
-    background-image: url("../../assets/img/clinica-4.jpg");
+    background-image: url("../../../assets/img/clinica-4-small.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    @include media(tablet) {
+      background-image: url('../../../assets/img/clinica-4-medium.jpg');
+    }
+    @include media(desktop-m) {
+      background-image: url('../../../assets/img/clinica-4-large.jpg');
+    }
   }
   @include media(desktop-s) {
     max-width: 547px;
