@@ -86,7 +86,7 @@ mixin footer-info(copyright,developer_sign,email)
     span.footer-info__email=email
 
 mixin title(principal,description)
-  .titles 
+  div(class="titles") 
     .titles__principal=principal
     .titles__description=description 
 
@@ -95,7 +95,7 @@ mixin button(text)
     .default=text
 
 mixin modal(title,id,text,link)
-  div(class="modal" id=id tabindex="-1" aria-labelledby="label_"+id aria-hidden="true")
+  div(class="modal animate__animated animate__zoomIn animate__faster" id=id tabindex="-1" aria-labelledby="label_"+id aria-hidden="true")
     div(class="modal-dialog modal-dialog-centered")
       div(class="modal-content")
         div(class="modal-header")
@@ -107,7 +107,7 @@ mixin modal(title,id,text,link)
           a(href=link target="_blank" class="btn btn-primary") Reservar cita
 
 mixin modal-schedule(title,id,link)
-  div(class="modal" id=id tabindex="-1" aria-labelledby="label_"+id aria-hidden="true")
+  div(class="modal animate__animated animate__zoomIn animate__faster" id=id tabindex="-1" aria-labelledby="label_"+id aria-hidden="true")
     div(class="modal-dialog modal-dialog-centered")
       div(class="modal-content")
         div(class="modal-header")

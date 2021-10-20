@@ -1911,3 +1911,25 @@ footer .footer-info__email {
 .swiper-wrapper {
   margin-bottom: 45px;
 }
+
+.swiper-button-prev {
+  -webkit-transition: -webkit-transform 250ms;
+  transition: -webkit-transform 250ms;
+  transition: transform 250ms;
+  transition: transform 250ms, -webkit-transform 250ms;
+}
+.swiper-button-prev:hover {
+  -webkit-transform: translatex(-8px);
+          transform: translatex(-8px);
+}
+
+.swiper-button-next {
+  -webkit-transition: -webkit-transform 250ms;
+  transition: -webkit-transform 250ms;
+  transition: transform 250ms;
+  transition: transform 250ms, -webkit-transform 250ms;
+}
+.swiper-button-next:hover {
+  -webkit-transform: translatex(8px);
+          transform: translatex(8px);
+}

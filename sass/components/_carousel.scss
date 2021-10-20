@@ -23,3 +23,17 @@
 .swiper-wrapper {
   margin-bottom: 45px;
 }
+
+.swiper-button-prev {
+  transition: transform 250ms;
+  &:hover {
+    transform: translatex(-8px);
+  }
+}
+
+.swiper-button-next {
+  transition: transform 250ms;
+  &:hover {
+    transform: translatex(8px);
+  }
+}
