@@ -33,6 +33,18 @@ $video-img : '../../assets/img/clinica-5.jpg';
   background-color: #fff;
 }
 
+@mixin animation {
+  -webkit-transform: scale(var(--s, 0.97));
+  transform: scale(var(--s, 0.97));
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  &:not(.added):hover {
+    --s: .90;
+    --s-y: 8px;
+    --s-b: 20px;
+  }
+}
+
 @function get-opacity($color, $amount) {
   @return rgba($color, $amount);
 }

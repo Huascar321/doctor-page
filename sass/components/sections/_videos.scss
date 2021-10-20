@@ -46,6 +46,10 @@
     box-shadow: 0px 8px 83px 0px rgba(0,0,0,0.75);
     -webkit-box-shadow: 0px 8px 83px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 8px 83px 0px rgba(0,0,0,0.75);
+    @include animation();
+    &:not(.added):hover {
+      background-color: #056ea7;
+    }
   }
   & img {
     width: 23%;

@@ -563,6 +563,7 @@ nav a {
 }
 nav a:hover {
   color: #117964;
+  text-decoration: none;
 }
 
 @media (max-width: 768px) {
@@ -1692,6 +1693,18 @@ nav a:hover {
   box-shadow: 0px 8px 83px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 0px 8px 83px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 8px 83px 0px rgba(0, 0, 0, 0.75);
+  -webkit-transform: scale(var(--s, 0.97));
+  transform: scale(var(--s, 0.97));
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+.video-icon:not(.added):hover {
+  --s: .90;
+  --s-y: 8px;
+  --s-b: 20px;
+}
+.video-icon:not(.added):hover {
+  background-color: #056ea7;
 }
 .video img {
   width: 23%;
@@ -1730,6 +1743,18 @@ footer .social-media__tiktok {
   background-repeat: no-repeat;
   -webkit-filter: invert(1);
   filter: invert(1);
+  -webkit-transform: scale(var(--s, 0.97));
+  transform: scale(var(--s, 0.97));
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+footer .social-media__tiktok:not(.added):hover {
+  --s: .90;
+  --s-y: 8px;
+  --s-b: 20px;
+}
+footer .social-media__tiktok:not(.added):hover {
+  --s: 1.1;
 }
 footer .social-media__instagram {
   width: 29px;
@@ -1740,6 +1765,18 @@ footer .social-media__instagram {
   background-repeat: no-repeat;
   -webkit-filter: invert(1);
   filter: invert(1);
+  -webkit-transform: scale(var(--s, 0.97));
+  transform: scale(var(--s, 0.97));
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+footer .social-media__instagram:not(.added):hover {
+  --s: .90;
+  --s-y: 8px;
+  --s-b: 20px;
+}
+footer .social-media__instagram:not(.added):hover {
+  --s: 1.1;
 }
 footer .social-media__facebook {
   width: 29px;
@@ -1750,6 +1787,18 @@ footer .social-media__facebook {
   background-repeat: no-repeat;
   -webkit-filter: invert(1);
   filter: invert(1);
+  -webkit-transform: scale(var(--s, 0.97));
+  transform: scale(var(--s, 0.97));
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+footer .social-media__facebook:not(.added):hover {
+  --s: .90;
+  --s-y: 8px;
+  --s-b: 20px;
+}
+footer .social-media__facebook:not(.added):hover {
+  --s: 1.1;
 }
 footer .footer-info {
   display: -webkit-box;

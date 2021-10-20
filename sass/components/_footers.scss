@@ -18,6 +18,10 @@ footer {
       background-repeat: no-repeat;
       -webkit-filter: invert(1);
       filter: invert(1);
+      @include animation();
+      &:not(.added):hover {
+        --s: 1.1;
+      }
     }
     &__instagram {
       width: 29px;
@@ -28,6 +32,10 @@ footer {
       background-repeat: no-repeat;
       -webkit-filter: invert(1);
       filter: invert(1);
+      @include animation();
+      &:not(.added):hover {
+        --s: 1.1;
+      }
     }
     &__facebook {
       width: 29px;
@@ -38,6 +46,10 @@ footer {
       background-repeat: no-repeat;
       -webkit-filter: invert(1);
       filter: invert(1);
+      @include animation();
+      &:not(.added):hover {
+        --s: 1.1;
+      }
     }
   }
   & .footer-info {
