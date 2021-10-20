@@ -86,14 +86,14 @@
     position: absolute;
     top: 7%;
     left: 6%;
-    background-image: url("../../../assets/img/clinica-4-small.jpg");
+    background-image: url("../../../assets/img/clinica-4-small.webp");
     background-repeat: no-repeat;
     background-size: cover;
     @include media(tablet) {
-      background-image: url('../../../assets/img/clinica-4-medium.jpg');
+      background-image: url('../../../assets/img/clinica-4-medium.webp');
     }
     @include media(desktop-m) {
-      background-image: url('../../../assets/img/clinica-4-large.jpg');
+      background-image: url('../../../assets/img/clinica-4-large.webp');
     }
   }
   @include media(desktop-s) {

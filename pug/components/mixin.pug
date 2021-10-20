@@ -10,9 +10,9 @@ mixin main-cover(name,text,text2,text_button)
         div(class="split-content home-right")
           div(class="image-wrapper home-hero")
             picture
-              source(media="(min-width:1300px)" srcset="../../assets/img/clinica-1-large.jpg")
-              source(media="(min-width:768px)" srcset="../../assets/img/clinica-1-medium.jpg")
-              img(src="../../assets/img/clinica-1-small.jpg", alt="Imagen de la doctora")
+              source(media="(min-width:1300px)" srcset="../../assets/img/clinica-1-large.webp")
+              source(media="(min-width:768px)" srcset="../../assets/img/clinica-1-medium.webp")
+              img(src="../../assets/img/clinica-1-small.webp", alt="Imagen de la doctora")
     div(class="bg home-hero")
 
 mixin skill-card(title,description,icon)
@@ -57,9 +57,9 @@ mixin schedule(title,description,text)
             span.schedule-info__text--description=text
           +button("RESERVA TU CITA")
     picture
-      source(media="(min-width:1300px)" srcset="../../assets/img/toothbrush-large.jpg")
-      source(media="(min-width:768px)" srcset="../../assets/img/toothbrush-medium.jpg")
-      img(src="../../assets/img/toothbrush-small.jpg", alt="Es una imagen de un cepillo de dientes")
+      source(media="(min-width:1300px)" srcset="../../assets/img/toothbrush-large.webp")
+      source(media="(min-width:768px)" srcset="../../assets/img/toothbrush-medium.webp")
+      img(src="../../assets/img/toothbrush-small.webp", alt="Es una imagen de un cepillo de dientes")
 
 mixin testimony-card(name,occupation,photo,text)
   .testimony-card
@@ -75,9 +75,9 @@ mixin video(link)
   .video-container
     .video
       picture 
-        source(media="(min-width:1300px)" srcset="../../assets/img/clinica-5-large.jpg")
-        source(media="(min-width:768px)" srcset="../../assets/img/clinica-5-medium.jpg")
-        img(src="../../assets/img/clinica-5-small.jpg", alt="Es una miniatura de video")
+        source(media="(min-width:1300px)" srcset="../../assets/img/clinica-5-large.webp")
+        source(media="(min-width:768px)" srcset="../../assets/img/clinica-5-medium.webp")
+        img(src="../../assets/img/clinica-5-small.webp", alt="Es una miniatura de video")
       .video-opacity
       a(class="video-icon" href=link target="_blank" rel="noopener")
         img(src="../assets/icons/play.svg", alt="Es un icono de play")

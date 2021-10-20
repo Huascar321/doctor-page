@@ -845,18 +845,18 @@ nav a:hover {
   position: absolute;
   top: 7%;
   left: 6%;
-  background-image: url("../../../assets/img/clinica-4-small.jpg");
+  background-image: url("../../../assets/img/clinica-4-small.webp");
   background-repeat: no-repeat;
   background-size: cover;
 }
 @media only screen and (min-width: 768px) {
   .doctor-cover__photo {
-    background-image: url("../../../assets/img/clinica-4-medium.jpg");
+    background-image: url("../../../assets/img/clinica-4-medium.webp");
   }
 }
 @media only screen and (min-width: 1200px) {
   .doctor-cover__photo {
-    background-image: url("../../../assets/img/clinica-4-large.jpg");
+    background-image: url("../../../assets/img/clinica-4-large.webp");
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -1285,7 +1285,6 @@ nav a:hover {
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5rem;
-  color: blue;
   cursor: pointer;
 }
 @media only screen and (min-width: 768px) {
