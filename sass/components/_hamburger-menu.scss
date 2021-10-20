@@ -4,17 +4,15 @@ nav .hamburger-lines {
 }
 
 .container {
-  /* max-width: 1200px; */
   width: 90%;
   margin: auto;
 }
 
 nav {
   width: 100%;
+  z-index: 100;
   background: $color-primario;
   color: #000;
-  /* opacity: 0.85; */
-  z-index: 100;
   @include media(mobile-only) {
     position: fixed;
   }
@@ -33,12 +31,11 @@ nav {
 }
 .logo {
   order: 1;
-  font-size: 2.3rem;
-  color: #fff;
   position: absolute;
   top: 10px;
   font-weight: bold;
   @include font-size(28px);
+  color: #fff;
 }
 
 .menu-items li {
@@ -57,6 +54,7 @@ nav a {
   transition: color 0.3s ease-in-out;
   &:hover {
     color: #117964;
+    text-decoration: none;
   }
 }
 

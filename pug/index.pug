@@ -2,87 +2,90 @@ extend components/plantilla.pug
 block contenidos
   main(id="main") 
     +main-cover('DRA. PAOLA TERRAZAS','Tu profesional favorita en Estética dental','Habilidosa, lista y carismática. La doctora Paola Terrazas es una profesional con muchos años de experiencia en el área odontológica.','RESERVA TU CITA')
-    section(id="skills")
-      .skills-container
-        +skill-card('Experta','Muy hábil y con años de experiencia, totalmente diestra en la odontología.','like-icon.svg')
-        +skill-card('Especialista','Conocedora y especialista en el área, tu sonrisa está en buenas manos.','heart-icon.svg')
-        +skill-card('Preparada','Siempre lista para tu sonrisa, encantada de atender con atención y cortesía.','star-icon.svg')
-    section(id="about")
-      +about('SOBRE MÍ', 'Obteniendo la mejor versión de las personas', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin nibh cursus at sed sagittis amet, sed. Tristique id nibh lobortis nunc elementum. Tellus quam mauris aenean turpis vulputate sodales nullam lobortis. Vulputate tortor tincidun.')
-    section(id="services")
-      .services
-        span.services__title--one SERVICIOS  
-        span.services__title--two Experimentada en multiples prácticas 
-      div(class="swiper mySwiper")
-        .swiper-wrapper
-          .swiper-slide
-            +carousel('Limpieza general','La limpieza dental se hace para eliminar la placa y el sarro que se acumula durante el paso del tiempo.','tooth-clean.svg','modal1')
-          .swiper-slide
-            +carousel('Eliminación de caries','Las caries son zonas dañadas de forma permanente en la superficie de los dientes que provocan molestias.','tooth-cavities.svg','modal2')
-          .swiper-slide
-            +carousel('Blanqueamiento','El blanqueamiento es un tratamiento estético que busca eliminar manchas dentales y blanquear los dientes.','tooth-white.svg','modal3')
-          .swiper-slide
-            +carousel('Armonización Facial','La armonización ayuda a mejorar la simetría del rostro, tratando el envejecimiento y revitalizando el rostro.','facial-harmonization.svg','modal4')
-          .swiper-slide
-            +carousel('Brackets','Los brackets se utilizan mucho para corregir la "mordedura deficiente" u oclusión dental defectuosa.','brackets.png','modal4')
-        .swiper-pagination
-        .swiper-button-prev
-        .swiper-button-next
-      +modal('Limpieza general','modal1','Por muy bien que te cepilles los dientes o uses el hilo dental, siempre quedan zonas difíciles de alcanzar. Una limpieza dental puede ayudarte a tener los dientes realmente limpios!','https://cutt.ly/kEEAs9Y')
-      +modal('Eliminación de caries','modal2', 'En nuestra boca, al comer, las bacterias y los restos de comida se acaban juntando en la superficie de los dientes y formando la placa dental. Si ésta no se elimina, acaba atacando el esmalte del diente. Si tienes caries o sientes tenerlas, acude con nosotros lo más pronto posible!','https://cutt.ly/BEEAxyJ')
-      +modal('Blanqueamiento','modal3', '...','https://cutt.ly/IEEAbz6')
-      +modal('Armonización facial','modal4', '...','https://cutt.ly/PEEAW8L')
-      +modal-schedule('Horarios', 'modal-schedule', 'https://cutt.ly/PEEAW8L')
-    section(id="Schedule")
-      .schedule-container
-        .schedule-container__info--two
-          .schedule-container__info
-            .schedule-info
-              .schedule-info__text
-                span.schedule-info__text--title RESERVA TU CITA
-                span.schedule-info__text--relevant Envianos un mensaje o mira los horarios disponibles
-                span.schedule-info__text--description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin nibh cursus at sed sagittis amet, sed.
-              +button("RESERVA TU CITA")
-        .schedule-image
-    section(id="testimonials")
-      .testimony
-        span.testimony__title--one TESTIMONIOS
-        span.testimony__title--two Lo que los clientes dicen sobre la doctora
-      .testimonials-container
-        +testimony-card('Yesenia Peredo', 'Presentadora de TV', 'testimony1.jpg', '“La Dra. Paola Terrazas dejo mis dientes perfectos y ahora mi sonrisa mejoró gracias a Dental Center!”')
-        +testimony-card('Testimonio 2', 'Presentadora de TV', 'testimony1.jpg', '“La Dra. Paola Terrazas dejo mis dientes perfectos y ahora mi sonrisa mejoró gracias a Dental Center!”')
-        +testimony-card('Testimonio 3', 'Presentadora de TV', 'testimony1.jpg', '“La Dra. Paola Terrazas dejo mis dientes perfectos y ahora mi sonrisa mejoró gracias a Dental Center!”')
-    section(id="video")
-      .video-container
-        .video
-          .video-opacity
-          a(class="video-icon" href="https://fb.watch/8ahMRwkmYn/" target="_blank")
-            img(src="../assets/icons/play.svg", alt="Es un icono de play")
-    section(id="posts")
-      .posts
-        span.posts__title--one GALERIA
-        span.posts__title--two Las fotografías más destacadas
-      div(class="swiper mySwiper")
-        .swiper-wrapper
-          .swiper-slide
-            img(class="carousel__gallery" src="../assets/img/gallery/vertical/dr1.jpg", alt="")
-          .swiper-slide
-            img(class="carousel__gallery" src="../assets/img/gallery/vertical/dr2.jpg", alt="")
-          .swiper-slide
-            img(class="carousel__gallery" src="../assets/img/gallery/vertical/dr3.jpg", alt="")
-          .swiper-slide
-            img(class="carousel__gallery" src="../assets/img/gallery/vertical/dr4.jpg", alt="")
-          .swiper-slide
-            img(class="carousel__gallery" src="../assets/img/gallery/vertical/dr5.jpg", alt="")
-          .swiper-slide
-            img(class="carousel__gallery" src="../assets/img/gallery/vertical/dr6.jpg", alt="")
-          .swiper-slide
-            img(class="carousel__gallery" src="../assets/img/gallery/vertical/dr7.jpg", alt="")
-        .swiper-pagination
-        .swiper-button-prev
-        .swiper-button-next
-    section(id="ubication")
-      .ubication
-        span ¡Encuentranos!
+  section(id="skills")
+    .skills-container
+      +skill-card('Experta','Muy hábil y con años de experiencia, totalmente diestra en la odontología.','like-icon.svg')
+      +skill-card('Especialista','Conocedora y especialista en el área, tu sonrisa está en buenas manos.','heart-icon.svg')
+      +skill-card('Preparada','Siempre lista para tu sonrisa, encantada de atender con atención y cortesía.','star-icon.svg')
+  section(id="about")
+    +about('SOBRE MÍ', 'Obteniendo la mejor versión de las personas', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin nibh cursus at sed sagittis amet, sed. Tristique id nibh lobortis nunc elementum. Tellus quam mauris aenean turpis vulputate sodales nullam lobortis. Vulputate tortor tincidun.')
+  section(id="services")
+    +title('SERVICIOS','Experimentada en multiples prácticas')
+    div(class="swiper mySwiper")
+      .swiper-wrapper
+        .swiper-slide
+          +carousel('Limpieza general','La limpieza dental se hace para eliminar la placa y el sarro que se acumula durante el paso del tiempo.','tooth-clean.svg','modal1')
+        .swiper-slide
+          +carousel('Eliminación de caries','Las caries son zonas dañadas de forma permanente en la superficie de los dientes que provocan molestias.','tooth-cavities.svg','modal2')
+        .swiper-slide
+          +carousel('Blanqueamiento','El blanqueamiento es un tratamiento estético que busca eliminar manchas dentales y blanquear los dientes.','tooth-white.svg','modal3')
+        .swiper-slide
+          +carousel('Armonización Facial','La armonización ayuda a mejorar la simetría del rostro, tratando el envejecimiento y revitalizando el rostro.','facial-harmonization.svg','modal4')
+        .swiper-slide
+          +carousel('Brackets','Los brackets se utilizan mucho para corregir la "mordedura deficiente" u oclusión dental defectuosa.','brackets.png','modal4')
+      .swiper-pagination
+      .swiper-button-prev
+      .swiper-button-next
+  section(id="schedule")
+    +schedule('RESERVA TU CITA','Envianos un mensaje o mira los horarios disponibles','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam proin nibh cursus at sed sagittis amet, sed.')
+  section(id="testimonials")
+    +title('TESTIMONIOS', 'Lo que los clientes dicen sobre la doctora')
+    .testimonials-container
+      +testimony-card('Yesenia Peredo', 'Presentadora de TV', 'testimony1.jpg', '“La Dra. Paola Terrazas dejo mis dientes perfectos y ahora mi sonrisa mejoró gracias a Dental Center!”')
+      +testimony-card('Testimonio 2', 'Presentadora de TV', 'testimony1.jpg', '“La Dra. Paola Terrazas dejo mis dientes perfectos y ahora mi sonrisa mejoró gracias a Dental Center!”')
+      +testimony-card('Testimonio 3', 'Presentadora de TV', 'testimony1.jpg', '“La Dra. Paola Terrazas dejo mis dientes perfectos y ahora mi sonrisa mejoró gracias a Dental Center!”')
+  section(id="video")
+    +video('#')
+  section(id="posts")
+    +title('GALERÍA','Las fotografías más destacadas')
+    div(class="swiper mySwiper")
+      .swiper-wrapper
+        .swiper-slide
+          picture 
+            source(media="(min-width:1300px)" srcset="./../assets/img/gallery/vertical/dr1-large.webp")
+            source(media="(min-width:768px)" srcset="./../assets/img/gallery/vertical/dr1-medium.webp")
+            img(class="carousel__gallery" src="../assets/img/gallery/vertical/dr1-small.webp", alt="")
+        .swiper-slide
+          picture 
+            source(media="(min-width:1300px)" srcset="./../assets/img/gallery/vertical/dr2-large.webp")
+            source(media="(min-width:768px)" srcset="./../assets/img/gallery/vertical/dr2-medium.webp")
+            img(class="carousel__gallery" src="../assets/img/gallery/vertical/dr2-small.webp", alt="")
+        .swiper-slide
+          picture 
+            source(media="(min-width:1300px)" srcset="./../assets/img/gallery/vertical/dr3-large.webp")
+            source(media="(min-width:768px)" srcset="./../assets/img/gallery/vertical/dr3-medium.webp")
+            img(class="carousel__gallery" src="../assets/img/gallery/vertical/dr3-small.webp", alt="")
+        .swiper-slide
+          picture 
+            source(media="(min-width:1300px)" srcset="./../assets/img/gallery/vertical/dr4-large.webp")
+            source(media="(min-width:768px)" srcset="./../assets/img/gallery/vertical/dr4-medium.webp")
+            img(class="carousel__gallery" src="../assets/img/gallery/vertical/dr4-small.webp", alt="")
+        .swiper-slide
+          picture 
+            source(media="(min-width:1300px)" srcset="./../assets/img/gallery/vertical/dr5-large.webp")
+            source(media="(min-width:768px)" srcset="./../assets/img/gallery/vertical/dr5-medium.webp")
+            img(class="carousel__gallery" src="../assets/img/gallery/vertical/dr5-small.webp", alt="")
+        .swiper-slide
+          picture 
+            source(media="(min-width:1300px)" srcset="./../assets/img/gallery/vertical/dr6-large.webp")
+            source(media="(min-width:768px)" srcset="./../assets/img/gallery/vertical/dr6-medium.webp")
+            img(class="carousel__gallery" src="../assets/img/gallery/vertical/dr6-small.webp", alt="")
+        .swiper-slide
+          picture 
+            source(media="(min-width:1300px)" srcset="./../assets/img/gallery/vertical/dr7-large.webp")
+            source(media="(min-width:768px)" srcset="./../assets/img/gallery/vertical/dr7-medium.webp")
+            img(class="carousel__gallery" src="../assets/img/gallery/vertical/dr7-small.webp", alt="")
+      .swiper-pagination
+      .swiper-button-prev
+      .swiper-button-next
+  section(id="ubication")
+    .ubication
+      span ¡Encuentranos!
     div(class="embed-responsive embed-responsive-16by9")
       <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5372.470012947848!2d-63.17182777696933!3d-17.795927466718464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93f1e84297c25f5b%3A0x67f5f6f6c00fb175!2sDental%20Center!5e0!3m2!1ses-419!2sbo!4v1634250724364!5m2!1ses-419!2sbo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  .modals
+    +modal('Limpieza general','modal1','Por muy bien que te cepilles los dientes o uses el hilo dental, siempre quedan zonas difíciles de alcanzar. Una limpieza dental puede ayudarte a tener los dientes realmente limpios!','#')
+    +modal('Eliminación de caries','modal2', 'En nuestra boca, al comer, las bacterias y los restos de comida se acaban juntando en la superficie de los dientes y formando la placa dental. Si ésta no se elimina, acaba atacando el esmalte del diente. Si tienes caries o sientes tenerlas, acude con nosotros lo más pronto posible!','https://cutt.ly/BEEAxyJ')
+    +modal('Blanqueamiento','modal3', '...','#')
+    +modal('Armonización facial','modal4', '...','#')
+    +modal-schedule('Horarios', 'modal-schedule', '#')
