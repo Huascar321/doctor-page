@@ -56,6 +56,11 @@ $video-img : '../../assets/img/clinica-5.jpg';
   font-family: $Fuente1;
 }
 
+html, main {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 main {
   background-color: $color-fondo;
 }
@@ -63,6 +68,11 @@ main {
 body {
   background-color: $color-fondo;
   @include font-size(18px);
+}
+
+header {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .embed-responsive-item {

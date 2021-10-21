@@ -462,6 +462,11 @@ output {
   font-family: "DM Sans", sans-serif;
 }
 
+html, main {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 main {
   background-color: #FBF7F3;
 }
@@ -471,6 +476,11 @@ body {
   font-size: 18px;
   font-size: 1.125rem;
   line-height: 1.6875rem;
+}
+
+header {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .embed-responsive-item {
