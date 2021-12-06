@@ -2,26 +2,32 @@ extend components/plantilla.pug
 block contenidos
   main 
     section(id="main") 
-      +main-cover('DRA. PAOLA TERRAZAS','Tu profesional favorita en Estética dental','Habilidosa, lista y carismática. La doctora Paola Terrazas es una profesional con muchos años de experiencia en el área odontológica.','RESERVA TU CITA')
+      +main-cover('DENTAL CENTER','Tus especialistas en sonrisas perfectas','Nosotros nos enfocamos en brindar un excelente servicio dental, con resultados superiores, al mejor precio y con una calidad inmejorable.','RESERVA TU CITA')
     section(id="skills")
       .skills-container
-        +skill-card('Experta','Muy hábil y con años de experiencia, totalmente diestra en la odontología.','like-icon.svg')
-        +skill-card('Especialista','Conocedora y especialista en el área, tu sonrisa está en buenas manos.','heart-icon.svg')
-        +skill-card('Preparada','Siempre lista para tu sonrisa, encantada de atender con atención y cortesía.','star-icon.svg')
+        +skill-card('Expertos','Muy hábiles y con años de experiencia, totalmente diestros en la odontología.','like-icon.svg')
+        +skill-card('Especialistas','Conocedores y especialistas en el área, tu sonrisa está en buenas manos.','heart-icon.svg')
+        +skill-card('Preparados','Siempre listos para tu sonrisa, encantados de atender con atención y cortesía.','star-icon.svg')
     section(id="about")
       +about('SOBRE NOSOTROS', 'Obteniendo la mejor versión de las personas', 'Brindamos a nuestros pacientes servicios odontológicos de alta calidad en todas las especialidades, a cargo de profesionales competentes con soporte tecnológico y atención de primera.')
     section(id="services")
-      +title('SERVICIOS','Experimentada en multiples prácticas')
+      +title('SERVICIOS','Experimentados en multiples prácticas')
       div(class="swiper mySwiper")
         .swiper-wrapper
           .swiper-slide
-            +carousel('Ortodoncia','La ortodoncia se encarga de problemas relacionado con los dientes y la mandíbula haciendo uso de frenos.','tooth-clean.svg','modal1')
+            +carousel('Ortodoncia','La ortodoncia se encarga de problemas relacionados con los dientes y la mandíbula haciendo uso de frenos','tooth-clean.svg','modal1')
           .swiper-slide
-            +carousel('Endodoncia','La endodoncia tiene como finalidad preservar las piezas dentales dañadas, evitando asi su pérdida.','tooth-cavities.svg','modal2')
+            +carousel('Endodoncia','La endodoncia tiene la finalidad de preservar las piezas dentales dañadas, evitando así su pérdida.','tooth-cavities.svg','modal2')
           .swiper-slide
-            +carousel('Periodoncia','La periodoncia trata todas las enfermedades periodontales producidas por acumulación de cálculo y placa bacteriana.','tooth-white.svg','modal3')
+            +carousel('Periodoncia','La periodoncia trata las enfermedades periodontales producidas por acumulación de cálculo y placa bacteriana.','tooth-white.svg','modal3')
           .swiper-slide
-            +carousel('Implantología','La implantología se dedica al reemplazo de dientes perdidos y rehabilitación dental.','brackets.png','modal5')
+            +carousel('Implantología','La implantología dental se dedica al reemplazo de dientes perdidos y rehabilitación dental.','brackets.png','modal5')
+          .swiper-slide
+            +carousel('Estética dental','La estética dental se encarga de la armonía bucal, mejorando la apariencia dental y mejorando la simetría','brackets.png','modal5')
+          .swiper-slide
+            +carousel('Rehabilitación oral','La rehabilitación oral devuelve y restaura las piezas dentales para devolverle su estética y armonía.','brackets.png','modal5')
+          .swiper-slide
+            +carousel('Cirugía maxilofacial','La cirugía maxilofacial es la especialidad que trata las intervenciones que afectan a la boca y áreas relacionadas.','brackets.png','modal5')
           .swiper-slide
             +carousel('Armonización Facial','La armonización ayuda a mejorar la simetría del rostro, tratando el envejecimiento y revitalizando el rostro.','facial-harmonization.svg','modal4')
         .swiper-pagination
