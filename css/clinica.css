@@ -537,16 +537,43 @@ nav {
 }
 
 .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
   position: absolute;
-  top: 10px;
+  top: 18px;
   font-weight: bold;
-  font-size: 28px;
-  font-size: 1.75rem;
-  line-height: 2.625rem;
+}
+.logo img {
+  margin-right: 6px;
+  width: 19px;
+  height: 19px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.logo__text {
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
+  font-weight: 500;
   color: #fff;
+}
+@media only screen and (min-width: 1024px) {
+  .logo img {
+    width: 21px;
+    height: 21px;
+  }
+  .logo__text {
+    font-size: 20px;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+  }
 }
 
 .menu-items li {
@@ -607,7 +634,7 @@ nav a:hover {
     height: 45px;
     width: 45px;
     position: absolute;
-    top: 12px;
+    top: 9px;
     right: 15px;
     border-radius: 25px;
     background-color: #0077B6;
@@ -618,7 +645,7 @@ nav a:hover {
     height: 15px;
     width: 20px;
     position: absolute;
-    top: 26px;
+    top: 23px;
     right: 27px;
     z-index: 2;
     display: -webkit-box;
@@ -855,14 +882,12 @@ nav a:hover {
   position: absolute;
   top: 7%;
   left: 6%;
-  background-image: url("../../../assets/img/clinica-4-small.webp");
+  background-image: url("../../../assets/img/clinica-4-medium.webp");
   background-repeat: no-repeat;
   background-size: cover;
-}
-@media only screen and (min-width: 768px) {
-  .doctor-cover__photo {
-    background-image: url("../../../assets/img/clinica-4-medium.webp");
-  }
+  /* @include media(tablet) {
+    background-image: url('../../../assets/img/clinica-4-medium.webp');
+  } */
 }
 @media only screen and (min-width: 1200px) {
   .doctor-cover__photo {

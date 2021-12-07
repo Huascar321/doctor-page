@@ -30,12 +30,32 @@ nav {
   order: 2;
 }
 .logo {
+  display: flex;
+  align-items: center;
   order: 1;
   position: absolute;
-  top: 10px;
+  top: 18px;
   font-weight: bold;
-  @include font-size(28px);
-  color: #fff;
+  & img{
+    margin-right: 6px;
+    width: 19px;
+    height: 19px;
+    object-fit: cover;
+  }
+  &__text {
+    @include font-size(18px);
+    font-weight: 500;
+    color: #fff;
+  }
+  @include media(desktop-s) {
+    & img{
+      width: 21px;
+      height: 21px;
+    }
+    &__text {
+      @include font-size(20px);
+    }
+  }
 }
 
 .menu-items li {
@@ -89,7 +109,7 @@ nav a {
     height: 45px;
     width: 45px;
     position: absolute;
-    top: 12px;
+    top: 9px;
     right: 15px;
     border-radius: 25px;
     background-color: $color-secundario;
@@ -100,7 +120,7 @@ nav a {
     height: 15px;
     width: 20px;
     position: absolute;
-    top: 26px;
+    top: 23px;
     right: 27px;
     z-index: 2;
     display: flex;
